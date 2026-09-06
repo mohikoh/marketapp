@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20260906110243" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20260906110243" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260906110243">
+   <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260906110243">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260906110243">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260906110243">
+   <link rel="stylesheet" href="files/custom-select/style.css?_v=20260906110243">
+   <title>Сповіщення - MarketApp</title>
+</head>
+
+<body>
+	<div class="wrapper">
+				<header class="header bg-color lock-padding">
+			<div class="n_container">
+				<div class="header__left">
+					<a href="/">
+						<img src="images/svg/logo-new.svg" alt="">
+					</a>
+				</div>
+				<div class="header__right">
+					<div class="header__categories-select">
+						<p class="header__categories-select-current">Категоріі</p>
+						<img class="categories-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="blockCalegoriesLinks">
+							<ul>
+								<li><a href="#">Дитячий світ</a></li>
+								<li><a href="#">Запчастини</a></li>
+								<li><a href="#">Дім і сад</a></li>
+								<li><a href="#">Хобі, відпочинок і спорт</a></li>
+								<li><a href="#">До речі, відомі речі</a></li>
+								<li><a href="#">Товари для геймерів</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Нерухомість</a></li>
+								<li><a href="#">Робота</a></li>
+								<li><a href="#">Електроніка</a></li>
+								<li><a href="#">Мода і стиль</a></li>
+								<li><a href="#">Віддам безкоштовно</a></li>
+								<li><a href="#">Товари для школи</a></li>
+								<li><a href="#">Запчастини: старт бізнесу</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Авто</a></li>
+								<li><a href="#">Тварини</a></li>
+								<li><a href="#">Бізнес та послуги</a></li>
+								<li><a href="#">Оренда та прокат</a></li>
+								<li><a href="#">Обмін</a></li>
+								<li><a href="#">Медицина/фармацевтика</a></li>
+								<li><a href="#">Мігрувати запчастини?</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="/agrotook/favorite.html" class="header__icon-favorites">
+						<img src="images/svg/favorite-new.svg" alt="">
+					</a>
+					<a href="chat.html" class="header__icon-message">
+						<img src="images/svg/message-new.svg" alt="">
+					</a>
+					<div class="header__lang-select">
+						<div class="header__lang-select-current-icon">
+							<img src="images/svg/language-icons/flag-ua.svg" alt="uk">
+						</div>
+						<img class="lang-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="block-langs">
+                     <div class="header__lang-content">
+                        <!--<p>Select a language:</p>-->
+                        <ul>
+                           <!-- class: current-lang -->
+                           <li class="current-lang">
+                              <a href="#"><img src="images/svg/language-icons/flag-ua.svg" alt="UA"></a>
+                           </li>
+									<li>
+                              <a href="#"><img src="images/svg/language-icons/flag-gb.svg" alt="GB"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-de.svg" alt="DE"></a>
+                           </li>
+									<!--
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-al.svg" alt="AL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-am.svg" alt="AM"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ee.svg" alt="EE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-by.svg" alt="BY"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-bg.svg" alt="BG"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ba.svg" alt="BA"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-is.svg" alt="IS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hu.svg" alt="HU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-gr.svg" alt="GR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-dk.svg" alt="DK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-it.svg" alt="IT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-nl.svg" alt="NL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-no.svg" alt="NO"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pl.svg" alt="PL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pt.svg" alt="PT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-md.svg" alt="MD"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ru.svg" alt="RU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-sk.svg" alt="SK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-cz.svg" alt="CZ"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-rs.svg" alt="RS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-si.svg" alt="SI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fr.svg" alt="FR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fi.svg" alt="FI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-se.svg" alt="SE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hr.svg" alt="HR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-tr.svg" alt="TR"></a>
+                           </li>
+									-->
+                        </ul>
+                     </div>
+						</div>
+					</div>
+					<div class="header__blockProfile">
+						<div class="wrap-photo open-list-user">
+							<img src="images/user.jpg" alt="">
+						</div>
+						<a class="open-list-user" href="#">Ваш профіль</a>
+						<div class="header__blockProfileLinks">
+							<ul>
+								<li><a href="#">Особистий кабінет</a></li>
+								<li><a href="#">Налаштування профілю</a></li>
+								<li><a href="#">Сповіщення</a></li>
+								<li><a href="#">Особисті повідомлення</a></li>
+								<li><a href="#">Розмістити оголошення</a></li>
+								<li><a href="/">Вийти</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="create-add.html" class="header__button">Створити оголошення</a>
+				</div>
+			</div>
+		</header>
+		<main class="main notifications">
+         <div class="n_container">
+				<div class="page__head">
+					<h1>Сповіщення</h1>
+				</div>
+
+            <div class="notifications__custom-alert"><!-- show -->
+               <p>marketapp.com requests authorization for:</p>
+               <p><img src="images/svg/bell-icon.svg" alt=""> <span>Displaying notifications</span></p>
+               <div class="notifications__custom-alertButtons">
+                  <a href="#">Block</a>
+                  <a href="#">Allow</a>
+               </div>
+               <button type="button" class="notifications__custom-alertClose"><img src="images/svg/close-custom-alert-icon.svg" alt=""></button>
+            </div>
+
+            <!--<div class="notifications__block-center">
+               <div class="wrap-icon">
+                  <img src="images/notifications-block-center-icon.png" alt="">
+               </div>
+               <h2>Будьте в курсі всіх важливих подій на платформі!</h2>
+               <p>Порада: Увімкніть сповіщення браузера, щоб залишатися в курсі подій у режимі реального часу!</p>
+            </div>-->
+
+            <div class="notifications__blocks">
+               <div class="notifications__block darker">
+                  <div class="wrap-icon">
+                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
+                  </div>
+                  <div class="notifications__blockInfo">
+                     <h2>Your ad has been verified!</h2>
+                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
+                  </div>
+                  <button type="button" class="notifications__blockRemove">
+                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
+                  </button>
+               </div>
+               <div class="notifications__block darker">
+                  <div class="wrap-icon">
+                     <img src="images/svg/notifications-block-icon-2.svg" alt="">
+                  </div>
+                  <div class="notifications__blockInfo">
+                     <h2>Your ad has not been verified</h2>
+                     <p>Please double-check the information in the ad. Make the necessary corrections and resubmit the ad for verification. If you have any questions, please contact our support.</p>
+                  </div>
+                  <button type="button" class="notifications__blockRemove">
+                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
+                  </button>
+               </div>
+               <div class="notifications__block">
+                  <div class="wrap-icon">
+                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
+                  </div>
+                  <div class="notifications__blockInfo">
+                     <h2>Your ad has been verified!</h2>
+                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
+                  </div>
+                  <button type="button" class="notifications__blockRemove">
+                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
+                  </button>
+               </div>
+               <div class="notifications__block">
+                  <div class="wrap-icon">
+                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
+                  </div>
+                  <div class="notifications__blockInfo">
+                     <h2>Your ad has been verified!</h2>
+                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
+                  </div>
+                  <button type="button" class="notifications__blockRemove">
+                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
+                  </button>
+               </div>
+               <div class="notifications__block">
+                  <div class="wrap-icon">
+                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
+                  </div>
+                  <div class="notifications__blockInfo">
+                     <h2>Your ad has been verified!</h2>
+                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
+                  </div>
+                  <button type="button" class="notifications__blockRemove">
+                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
+                  </button>
+               </div>
+               <div class="notifications__block">
+                  <div class="wrap-icon">
+                     <img src="images/svg/notifications-block-icon-2.svg" alt="">
+                  </div>
+                  <div class="notifications__blockInfo">
+                     <h2>Your ad has been verified!</h2>
+                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
+                  </div>
+                  <button type="button" class="notifications__blockRemove">
+                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
+                  </button>
+               </div>
+            </div>
+
+         </div>
+      </main>
+		<footer class="footer">
+    <div class="n_container">
+        <div class="footer__columns">
+            <div class="footer__column footer-first-column">
+                <div class="footer__blockLogo">
+                    <img src="images/svg/footer-logo-new.svg" alt="MarketApp">
+                </div>
+                <div class="footer__appButtons">
+                    <a href="#">
+                        <img src="images/svg/footer-app-google-new.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/svg/footer-app-store-new.svg" alt="">
+                    </a>
+                </div>
+                <p class="footer-copyright">2026 MarketApp. Всі права захищені.</p>
+            </div>
+            <div data-da="footer-first-column, 1, 767" class="footer__column">
+                <div class="footer__columnBlock">
+                    <h3>Про нас</h3>
+                    <ul>
+                        <li><a href="#">Про MarketApp</a></li>
+                        <li><a href="#">Мобільний застосунок</a></li>
+                        <li><a href="#">Реклама</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock">
+                    <h3>Навігація</h3>
+                    <ul>
+                        <li><a href="#">Категорії</a></li>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Пошук</a></li>
+                        <li><a href="#">Повідомлення</a></li>
+                        <li><a href="#">Улюблене</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Новини</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock last">
+                    <h3>Допомога</h3>
+                    <ul>
+                        <li><a href="#">Public offer</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	</div>
+	
+   <script src="js/script.min.js?_v=20260906110243"></script>
+	
+   <script src="files/js/notifications.js?_v=20260906110243"></script>
+
+</body>
+</html>

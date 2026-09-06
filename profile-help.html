@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20260906110243" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20260906110243" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260906110243">
+   <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260906110243">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260906110243">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260906110243">
+   <link rel="stylesheet" href="files/custom-select/style.css?_v=20260906110243">
+   <title>Допомога - Аgro Took</title>
+</head>
+
+<body>
+	<div class="wrapper">
+				<header class="header bg-color lock-padding">
+			<div class="n_container">
+				<div class="header__left">
+					<a href="/">
+						<img src="images/svg/logo-new.svg" alt="">
+					</a>
+				</div>
+				<div class="header__right">
+					<div class="header__categories-select">
+						<p class="header__categories-select-current">Категоріі</p>
+						<img class="categories-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="blockCalegoriesLinks">
+							<ul>
+								<li><a href="#">Дитячий світ</a></li>
+								<li><a href="#">Запчастини</a></li>
+								<li><a href="#">Дім і сад</a></li>
+								<li><a href="#">Хобі, відпочинок і спорт</a></li>
+								<li><a href="#">До речі, відомі речі</a></li>
+								<li><a href="#">Товари для геймерів</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Нерухомість</a></li>
+								<li><a href="#">Робота</a></li>
+								<li><a href="#">Електроніка</a></li>
+								<li><a href="#">Мода і стиль</a></li>
+								<li><a href="#">Віддам безкоштовно</a></li>
+								<li><a href="#">Товари для школи</a></li>
+								<li><a href="#">Запчастини: старт бізнесу</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Авто</a></li>
+								<li><a href="#">Тварини</a></li>
+								<li><a href="#">Бізнес та послуги</a></li>
+								<li><a href="#">Оренда та прокат</a></li>
+								<li><a href="#">Обмін</a></li>
+								<li><a href="#">Медицина/фармацевтика</a></li>
+								<li><a href="#">Мігрувати запчастини?</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="/agrotook/favorite.html" class="header__icon-favorites">
+						<img src="images/svg/favorite-new.svg" alt="">
+					</a>
+					<a href="chat.html" class="header__icon-message">
+						<img src="images/svg/message-new.svg" alt="">
+					</a>
+					<div class="header__lang-select">
+						<div class="header__lang-select-current-icon">
+							<img src="images/svg/language-icons/flag-ua.svg" alt="uk">
+						</div>
+						<img class="lang-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="block-langs">
+                     <div class="header__lang-content">
+                        <!--<p>Select a language:</p>-->
+                        <ul>
+                           <!-- class: current-lang -->
+                           <li class="current-lang">
+                              <a href="#"><img src="images/svg/language-icons/flag-ua.svg" alt="UA"></a>
+                           </li>
+									<li>
+                              <a href="#"><img src="images/svg/language-icons/flag-gb.svg" alt="GB"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-de.svg" alt="DE"></a>
+                           </li>
+									<!--
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-al.svg" alt="AL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-am.svg" alt="AM"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ee.svg" alt="EE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-by.svg" alt="BY"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-bg.svg" alt="BG"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ba.svg" alt="BA"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-is.svg" alt="IS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hu.svg" alt="HU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-gr.svg" alt="GR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-dk.svg" alt="DK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-it.svg" alt="IT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-nl.svg" alt="NL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-no.svg" alt="NO"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pl.svg" alt="PL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pt.svg" alt="PT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-md.svg" alt="MD"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ru.svg" alt="RU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-sk.svg" alt="SK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-cz.svg" alt="CZ"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-rs.svg" alt="RS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-si.svg" alt="SI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fr.svg" alt="FR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fi.svg" alt="FI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-se.svg" alt="SE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hr.svg" alt="HR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-tr.svg" alt="TR"></a>
+                           </li>
+									-->
+                        </ul>
+                     </div>
+						</div>
+					</div>
+					<div class="header__blockProfile">
+						<div class="wrap-photo open-list-user">
+							<img src="images/user.jpg" alt="">
+						</div>
+						<a class="open-list-user" href="#">Ваш профіль</a>
+						<div class="header__blockProfileLinks">
+							<ul>
+								<li><a href="#">Особистий кабінет</a></li>
+								<li><a href="#">Налаштування профілю</a></li>
+								<li><a href="#">Сповіщення</a></li>
+								<li><a href="#">Особисті повідомлення</a></li>
+								<li><a href="#">Розмістити оголошення</a></li>
+								<li><a href="/">Вийти</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="create-add.html" class="header__button">Створити оголошення</a>
+				</div>
+			</div>
+		</header>
+		<main class="main profile">
+         <div class="n_container">
+				<div class="page__head">
+					<h1>Допомога</h1>
+				</div>
+            <div class="profile__items">
+               <div class="profile__item">
+                  <ul class="profile-help-list">
+                     <li>
+                        <a href="#">
+                           <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M20.0895 15.0801L16.0891 13.0799C15.9709 13.0211 15.8394 12.9946 15.7077 13.0029C15.576 13.0113 15.4488 13.0542 15.339 13.1274L13.3789 14.4338C12.3865 13.9258 11.5792 13.1184 11.0712 12.1261L12.3788 10.1671C12.452 10.0574 12.4949 9.93019 12.5032 9.7985C12.5116 9.6668 12.485 9.53524 12.4263 9.41708L10.4261 5.41673C10.3639 5.29157 10.268 5.18628 10.1492 5.11273C10.0303 5.03917 9.8933 5.00028 9.75354 5.00044C8.49365 5.00044 7.28536 5.50093 6.39449 6.39181C5.50361 7.28269 5.00312 8.49097 5.00312 9.75086C5.00643 12.6012 6.14018 15.3338 8.15565 17.3493C10.1711 19.3648 12.9038 20.4985 15.7541 20.5018C17.014 20.5018 18.2222 20.0013 19.1131 19.1104C20.004 18.2196 20.5045 17.0113 20.5045 15.7514C20.5045 15.612 20.4657 15.4753 20.3924 15.3567C20.3191 15.2382 20.2142 15.1424 20.0895 15.0801ZM15.7541 19.0017C13.3015 18.9987 10.9503 18.0231 9.21604 16.2889C7.48182 14.5547 6.50623 12.2034 6.50325 9.75086C6.50332 8.96641 6.78709 8.20846 7.30221 7.61683C7.81732 7.02521 8.52902 6.63984 9.306 6.53183L10.8886 9.69711L9.58978 11.6448C9.52153 11.7475 9.47967 11.8655 9.46789 11.9882C9.45612 12.111 9.47479 12.2348 9.52227 12.3486C10.212 13.9884 11.5165 15.2929 13.1563 15.9827C13.2702 16.0301 13.3939 16.0488 13.5167 16.037C13.6395 16.0253 13.7574 15.9834 13.8602 15.9152L15.8078 14.6163L18.9731 16.1989C18.8651 16.9759 18.4797 17.6876 17.8881 18.2027C17.2965 18.7178 16.5385 19.0016 15.7541 19.0017ZM12.7538 2.81045e-07C10.5433 -0.000463755 8.37073 0.57371 6.44911 1.66619C4.52749 2.75867 2.92287 4.33193 1.79269 6.23163C0.662508 8.13132 0.0455794 10.2922 0.00243016 12.5022C-0.040719 14.7123 0.491394 16.8956 1.54656 18.8379L0.0939354 23.1971C-0.00890297 23.5054 -0.0238272 23.8363 0.0508356 24.1527C0.125498 24.4691 0.286797 24.7584 0.516654 24.9883C0.746511 25.2181 1.03584 25.3794 1.35222 25.4541C1.66859 25.5288 1.99951 25.5138 2.30788 25.411L6.66702 23.9584C8.3734 24.8844 10.2687 25.4085 12.2084 25.4908C14.1481 25.5731 16.081 25.2114 17.8597 24.4332C19.6383 23.6551 21.2158 22.481 22.4719 21.0006C23.7279 19.5202 24.6293 17.7726 25.1074 15.8909C25.5854 14.0092 25.6275 12.0432 25.2304 10.1428C24.8333 8.24244 24.0074 6.45782 22.8158 4.92506C21.6243 3.39229 20.0984 2.15186 18.3547 1.29834C16.6109 0.444817 14.6953 0.000751141 12.7538 2.81045e-07ZM12.7538 24.0021C10.776 24.0026 8.83311 23.4817 7.12081 22.492C7.00666 22.4264 6.87744 22.3915 6.74577 22.3907C6.66507 22.3912 6.58493 22.4043 6.50825 22.4295L1.83409 23.9871C1.79004 24.0018 1.74276 24.0039 1.69757 23.9933C1.65237 23.9826 1.61104 23.9596 1.5782 23.9267C1.54536 23.8939 1.52232 23.8526 1.51165 23.8074C1.50099 23.7622 1.50312 23.7149 1.51781 23.6708L3.07545 19.0017C3.10915 18.9008 3.12101 18.7939 3.11023 18.6881C3.09945 18.5822 3.06629 18.4799 3.01294 18.3879C1.7719 16.2441 1.27306 13.7506 1.59381 11.2943C1.91455 8.83804 3.03696 6.55628 4.78689 4.80303C6.53682 3.04977 8.81644 1.92304 11.2721 1.59763C13.7278 1.27223 16.2222 1.76634 18.3683 3.00331C20.5145 4.24027 22.1925 6.15095 23.1419 8.43891C24.0913 10.7269 24.2591 13.2642 23.6193 15.6573C22.9794 18.0503 21.5677 20.1653 19.6031 21.6742C17.6385 23.183 15.2309 24.0013 12.7538 24.0021Z" fill="#20201E"/>
+                           </svg>
+                           WhatsApp
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M25.2185 0.197359C25.1067 0.100767 24.9706 0.0365452 24.825 0.0116236C24.6793 -0.0132979 24.5297 0.00202677 24.3921 0.0559441L0.901062 9.24904C0.615337 9.36084 0.373596 9.56232 0.212144 9.82323C0.0506922 10.0841 -0.0217557 10.3904 0.00568073 10.696C0.0331172 11.0016 0.158957 11.29 0.364301 11.518C0.569646 11.7459 0.84341 11.9011 1.14448 11.9603L7.41772 13.1924V20.1692C7.41785 20.4927 7.51463 20.8087 7.69564 21.0768C7.87665 21.3448 8.13364 21.5527 8.43362 21.6736C8.73359 21.7946 9.06287 21.8231 9.37919 21.7556C9.69552 21.6881 9.98445 21.5276 10.2089 21.2948L13.2968 18.0921L18.1165 22.3171C18.4108 22.5775 18.79 22.7214 19.1829 22.7217C19.3545 22.7213 19.525 22.6943 19.6883 22.6417C19.9561 22.557 20.1969 22.4035 20.3869 22.1967C20.5768 21.9898 20.7093 21.7368 20.7709 21.4628L25.4794 0.993684C25.5125 0.849782 25.5057 0.699575 25.4597 0.559249C25.4137 0.418923 25.3304 0.293799 25.2185 0.197359ZM1.39601 10.5913C1.39157 10.5794 1.39157 10.5662 1.39601 10.5542C1.40125 10.5502 1.40713 10.547 1.4134 10.545L19.9259 3.29804L7.95208 11.8756L1.4134 10.596L1.39601 10.5913ZM9.20742 20.328C9.17547 20.3612 9.13438 20.3841 9.08937 20.3938C9.04437 20.4035 8.99749 20.3996 8.95472 20.3826C8.91195 20.3655 8.87522 20.3361 8.84921 20.2981C8.8232 20.2602 8.80909 20.2153 8.80868 20.1692V14.1545L12.2501 17.1682L9.20742 20.328ZM19.4159 21.1487C19.4074 21.1879 19.3884 21.2241 19.3611 21.2534C19.3338 21.2828 19.2991 21.3043 19.2606 21.3156C19.2213 21.3294 19.1791 21.3324 19.1383 21.3242C19.0975 21.3161 19.0597 21.2971 19.0288 21.2693L9.2306 12.6743L23.7615 2.26062L19.4159 21.1487Z" fill="#20201E"/>
+                           </svg>
+                           Telegram
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="profile__item">
+                  <div class="profile__itemBlock list-buttons">
+                     <div class="profile__tabButtons">
+                        <a href="#" class="profile__tabButton">Мої оголошення</a>
+                        <a href="#" class="profile__tabButton">Мої відгуки</a>
+                        <a href="#" class="profile__tabButton">Для вас</a>
+                        <a href="#" class="profile__tabButton">Підписки</a>
+                        <a href="#" class="profile__tabButton">Промокод</a>
+                        <a href="#" class="profile__tabButton">ТОП-розміщення</a>
+                        <a href="#" class="profile__tabButton">Реферальна програма</a>
+                        <a href="#" class="profile__tabButton">Мій QR-код</a>
+                        <a href="#" class="profile__tabButton active">Допомога</a>
+                        <a href="#" class="profile__tabButton">Умови використання</a>
+                        <a href="#" class="profile__tabButton">Політика</a>
+                        <a href="#" class="profile__tabButton">Про компанію MarketApp</a>
+                        <a href="#delete-accaunt" class="profile__tabButton delete-account popup-link">Видалити акаунт</a>
+                        <a href="#log-out" class="profile__tabButton log-out popup-link">Вийти з системи</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+    <div class="n_container">
+        <div class="footer__columns">
+            <div class="footer__column footer-first-column">
+                <div class="footer__blockLogo">
+                    <img src="images/svg/footer-logo-new.svg" alt="MarketApp">
+                </div>
+                <div class="footer__appButtons">
+                    <a href="#">
+                        <img src="images/svg/footer-app-google-new.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/svg/footer-app-store-new.svg" alt="">
+                    </a>
+                </div>
+                <p class="footer-copyright">2026 MarketApp. Всі права захищені.</p>
+            </div>
+            <div data-da="footer-first-column, 1, 767" class="footer__column">
+                <div class="footer__columnBlock">
+                    <h3>Про нас</h3>
+                    <ul>
+                        <li><a href="#">Про MarketApp</a></li>
+                        <li><a href="#">Мобільний застосунок</a></li>
+                        <li><a href="#">Реклама</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock">
+                    <h3>Навігація</h3>
+                    <ul>
+                        <li><a href="#">Категорії</a></li>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Пошук</a></li>
+                        <li><a href="#">Повідомлення</a></li>
+                        <li><a href="#">Улюблене</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Новини</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock last">
+                    <h3>Допомога</h3>
+                    <ul>
+                        <li><a href="#">Public offer</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+      <div id="delete-accaunt" class="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+               <!--<a href="" class="popup__close close-popup">X</a>-->
+         
+               <h2>Видалити обліковий запис</h2>
+               <p>Ви впевнені, що хочете видалити цей обліковий запис?</p>
+               <div class="popup__wrap-bottoms">
+                  <a href="/" class="popup__close">Видалити</a>
+                  <a href="" class="popup__close close-popup">Скасувати</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="log-out" class="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+               <!--<a href="" class="popup__close close-popup">X</a>-->
+         
+               <h2>Вийти</h2>
+               <p>Ви впевнені, що хочете вийти?</p>
+               <div class="popup__wrap-bottoms">
+                  <a href="/log-in.html" class="popup__close">Вийти</a>
+                  <a href="" class="popup__close close-popup">Скасувати</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   
+   <script src="js/script.min.js?_v=20260906110243"></script>
+   
+</body>
+</html>

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20260906110243" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20260906110243" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260906110243">
+   <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260906110243">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260906110243">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260906110243">
+   <link rel="stylesheet" href="files/custom-select/style.css?_v=20260906110243">
+   <title>Favorite - MarketApp</title>
+</head>
+
+<body>
+	<div class="wrapper">
+				<header class="header bg-color lock-padding">
+			<div class="n_container">
+				<div class="header__left">
+					<a href="/">
+						<img src="images/svg/logo-new.svg" alt="">
+					</a>
+				</div>
+				<div class="header__right">
+					<div class="header__categories-select">
+						<p class="header__categories-select-current">Категоріі</p>
+						<img class="categories-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="blockCalegoriesLinks">
+							<ul>
+								<li><a href="#">Дитячий світ</a></li>
+								<li><a href="#">Запчастини</a></li>
+								<li><a href="#">Дім і сад</a></li>
+								<li><a href="#">Хобі, відпочинок і спорт</a></li>
+								<li><a href="#">До речі, відомі речі</a></li>
+								<li><a href="#">Товари для геймерів</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Нерухомість</a></li>
+								<li><a href="#">Робота</a></li>
+								<li><a href="#">Електроніка</a></li>
+								<li><a href="#">Мода і стиль</a></li>
+								<li><a href="#">Віддам безкоштовно</a></li>
+								<li><a href="#">Товари для школи</a></li>
+								<li><a href="#">Запчастини: старт бізнесу</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Авто</a></li>
+								<li><a href="#">Тварини</a></li>
+								<li><a href="#">Бізнес та послуги</a></li>
+								<li><a href="#">Оренда та прокат</a></li>
+								<li><a href="#">Обмін</a></li>
+								<li><a href="#">Медицина/фармацевтика</a></li>
+								<li><a href="#">Мігрувати запчастини?</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="/agrotook/favorite.html" class="header__icon-favorites">
+						<img src="images/svg/favorite-new.svg" alt="">
+					</a>
+					<a href="chat.html" class="header__icon-message">
+						<img src="images/svg/message-new.svg" alt="">
+					</a>
+					<div class="header__lang-select">
+						<div class="header__lang-select-current-icon">
+							<img src="images/svg/language-icons/flag-ua.svg" alt="uk">
+						</div>
+						<img class="lang-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="block-langs">
+                     <div class="header__lang-content">
+                        <!--<p>Select a language:</p>-->
+                        <ul>
+                           <!-- class: current-lang -->
+                           <li class="current-lang">
+                              <a href="#"><img src="images/svg/language-icons/flag-ua.svg" alt="UA"></a>
+                           </li>
+									<li>
+                              <a href="#"><img src="images/svg/language-icons/flag-gb.svg" alt="GB"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-de.svg" alt="DE"></a>
+                           </li>
+									<!--
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-al.svg" alt="AL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-am.svg" alt="AM"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ee.svg" alt="EE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-by.svg" alt="BY"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-bg.svg" alt="BG"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ba.svg" alt="BA"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-is.svg" alt="IS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hu.svg" alt="HU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-gr.svg" alt="GR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-dk.svg" alt="DK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-it.svg" alt="IT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-nl.svg" alt="NL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-no.svg" alt="NO"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pl.svg" alt="PL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pt.svg" alt="PT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-md.svg" alt="MD"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ru.svg" alt="RU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-sk.svg" alt="SK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-cz.svg" alt="CZ"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-rs.svg" alt="RS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-si.svg" alt="SI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fr.svg" alt="FR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fi.svg" alt="FI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-se.svg" alt="SE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hr.svg" alt="HR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-tr.svg" alt="TR"></a>
+                           </li>
+									-->
+                        </ul>
+                     </div>
+						</div>
+					</div>
+					<div class="header__blockProfile">
+						<div class="wrap-photo open-list-user">
+							<img src="images/user.jpg" alt="">
+						</div>
+						<a class="open-list-user" href="#">Ваш профіль</a>
+						<div class="header__blockProfileLinks">
+							<ul>
+								<li><a href="#">Особистий кабінет</a></li>
+								<li><a href="#">Налаштування профілю</a></li>
+								<li><a href="#">Сповіщення</a></li>
+								<li><a href="#">Особисті повідомлення</a></li>
+								<li><a href="#">Розмістити оголошення</a></li>
+								<li><a href="/">Вийти</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="create-add.html" class="header__button">Створити оголошення</a>
+				</div>
+			</div>
+		</header>
+		<main class="main favorite there-are-chosen-ones">
+         <div class="n_container">
+				<div class="page__head there-is-a-button">
+					<h1>Збережені оголощення</h1>
+               <button id="show-sidebar" type="button" class="favorite__btn-show-filter">
+                  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="m487.976 0h-463.948c-21.318 0-32.075 25.866-16.97 40.971l184.942 184.97v206.059c0 7.831 3.821 15.17 10.237 19.662l80 55.98c15.783 11.048 37.763-.149 37.763-19.662v-262.039l184.947-184.97c15.074-15.075 4.391-40.971-16.971-40.971z"/>
+                  </svg>
+               </button>
+				</div>
+
+				<!-- Favorite -->
+
+				<div class="favorite__items">
+					<div class="favorite__item">
+                  <aside id="sidebar-sort-by" class="sidebar-filters">
+                     <form action="#">
+								<div class="block-sort-by">
+									<div data-spollers class="block"><!-- data-one-spoller -->
+										<div class="block__item">
+											<button tabindex="-1" type="button" data-spoller class="block__title">Сортувати за</button>
+											<div class="block__text">
+												<div class="block__text-content">
+													<div class="block-sort-by__boxs">
+														<div class="block-sort-by__box">
+															<label>Ціна</label>
+															<div class="sidebar-filters-btn">
+																<input type="radio" name="price" value="">
+																<span class="sidebar-filters-btn-checked">За зростанням</span>
+															</div>
+															<div class="sidebar-filters-btn">
+																<input type="radio" name="price" value="High to Low">
+																<span class="sidebar-filters-btn-checked">За зниженням</span>
+															</div>
+														</div>
+														<div class="block-sort-by__box">
+															<label>Дата публікаціі</label>
+															<div class="sidebar-filters-btn">
+																<input type="radio" name="publication-date" value="">
+																<span class="sidebar-filters-btn-checked">Від найновіших</span>
+															</div>
+															<div class="sidebar-filters-btn">
+																<input type="radio" name="publication-date" value="">
+																<span class="sidebar-filters-btn-checked">Від найдавніших</span>
+															</div>
+														</div>
+														<div class="block-sort-by__box">
+															<label>За алфавітом</label>
+															<div class="sidebar-filters-btn">
+																<input type="radio" name="alphabetically" value="">
+																<span class="sidebar-filters-btn-checked">Від А до Я</span>
+															</div>
+															<div class="sidebar-filters-btn">
+																<input type="radio" name="alphabetically" value="">
+																<span class="sidebar-filters-btn-checked">Від Я до А</span>
+															</div>
+														</div>
+													</div>
+													<div class="block-sort-by__wrap-buttons">
+														<button type="button" class="block-sort-by__apply">Застосувати</button>
+														<button type="reset" class="block-sort-by__cast">Скинути</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+                  </aside>
+               </div>
+					<div class="favorite__item">
+                  <div class="top-products__items">
+							<div class="top-products__item">
+								<div class="product-card top">
+									<div class="product-card__wrap-image">
+										<a href="#">
+											<span class="product-card__label-top">top</span>
+											<img src="images/top-products-iphone.png" alt="">
+										</a>
+										<button type="button" class="product-card__favorites-btn message">
+											<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15 0H1.66667C0.75 0 0 0.75 0 1.66667V16.6667L3.33333 13.3333H15C15.9167 13.3333 16.6667 12.5833 16.6667 11.6667V1.66667C16.6667 0.75 15.9167 0 15 0ZM15 11.6667H3.33333L1.66667 13.3333V1.66667H15V11.6667Z" fill="#20201E"/>
+											</svg>
+										</button>
+										<button type="button" class="product-card__favorites-btn to-favorites">
+											<svg width="17" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" fill="#20201E" stroke-width="1.25"/>
+											</svg>
+											<!--
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.7201 0.825545C12.5201 -0.674455 9.80343 0.0255452 8.33677 1.74221C6.8701 0.0255452 4.15343 -0.682788 1.95343 0.825545C0.786766 1.62555 0.0534329 2.97555 0.00343289 4.40055C-0.113234 7.63388 2.75343 10.2255 7.12843 14.2005L7.21177 14.2755C7.8451 14.8505 8.8201 14.8505 9.45343 14.2672L9.5451 14.1839C13.9201 10.2172 16.7784 7.62555 16.6701 4.39221C16.6201 2.97555 15.8868 1.62555 14.7201 0.825545ZM8.4201 12.9589L8.33677 13.0422L8.25343 12.9589C4.28677 9.36721 1.6701 6.99221 1.6701 4.58388C1.6701 2.91721 2.9201 1.66721 4.58677 1.66721C5.8701 1.66721 7.1201 2.49221 7.56177 3.63388H9.1201C9.55343 2.49221 10.8034 1.66721 12.0868 1.66721C13.7534 1.66721 15.0034 2.91721 15.0034 4.58388C15.0034 6.99221 12.3868 9.36721 8.4201 12.9589Z" fill="#20201E"/>
+											</svg>
+											-->
+										</button>
+									</div>
+									<div class="product-card__content">
+										<p class="product-card__content-head">
+											<span>Київ</span>
+											<span>Вчора 07:30</span>
+										</p>
+										<h2 class="product-card__content-name">Продам iPhone 16 PRO max оригінал</h2>
+										<p class="product-card__content-price">24 000,00 грн</p>
+									</div>
+								</div>
+							</div>
+							<div class="top-products__item">
+								<div class="product-card top">
+									<div class="product-card__wrap-image">
+										<a href="#">
+											<span class="product-card__label-top">top</span>
+											<img src="images/top-products-iphone.png" alt="">
+										</a>
+										<button type="button" class="product-card__favorites-btn message">
+											<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15 0H1.66667C0.75 0 0 0.75 0 1.66667V16.6667L3.33333 13.3333H15C15.9167 13.3333 16.6667 12.5833 16.6667 11.6667V1.66667C16.6667 0.75 15.9167 0 15 0ZM15 11.6667H3.33333L1.66667 13.3333V1.66667H15V11.6667Z" fill="#20201E"/>
+											</svg>
+										</button>
+										<button type="button" class="product-card__favorites-btn to-favorites">
+											<svg width="17" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" fill="#20201E" stroke-width="1.25"/>
+											</svg>
+											<!--
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.7201 0.825545C12.5201 -0.674455 9.80343 0.0255452 8.33677 1.74221C6.8701 0.0255452 4.15343 -0.682788 1.95343 0.825545C0.786766 1.62555 0.0534329 2.97555 0.00343289 4.40055C-0.113234 7.63388 2.75343 10.2255 7.12843 14.2005L7.21177 14.2755C7.8451 14.8505 8.8201 14.8505 9.45343 14.2672L9.5451 14.1839C13.9201 10.2172 16.7784 7.62555 16.6701 4.39221C16.6201 2.97555 15.8868 1.62555 14.7201 0.825545ZM8.4201 12.9589L8.33677 13.0422L8.25343 12.9589C4.28677 9.36721 1.6701 6.99221 1.6701 4.58388C1.6701 2.91721 2.9201 1.66721 4.58677 1.66721C5.8701 1.66721 7.1201 2.49221 7.56177 3.63388H9.1201C9.55343 2.49221 10.8034 1.66721 12.0868 1.66721C13.7534 1.66721 15.0034 2.91721 15.0034 4.58388C15.0034 6.99221 12.3868 9.36721 8.4201 12.9589Z" fill="#20201E"/>
+											</svg>
+											-->
+										</button>
+									</div>
+									<div class="product-card__content">
+										<p class="product-card__content-head">
+											<span>Київ</span>
+											<span>Вчора 07:30</span>
+										</p>
+										<h2 class="product-card__content-name">Продам iPhone 16 PRO max оригінал</h2>
+										<p class="product-card__content-price">24 000,00 грн</p>
+									</div>
+								</div>
+							</div>
+							<div class="top-products__item">
+								<div class="product-card top">
+									<div class="product-card__wrap-image">
+										<a href="#">
+											<span class="product-card__label-top">top</span>
+											<img src="images/top-products-iphone.png" alt="">
+										</a>
+										<button type="button" class="product-card__favorites-btn message">
+											<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15 0H1.66667C0.75 0 0 0.75 0 1.66667V16.6667L3.33333 13.3333H15C15.9167 13.3333 16.6667 12.5833 16.6667 11.6667V1.66667C16.6667 0.75 15.9167 0 15 0ZM15 11.6667H3.33333L1.66667 13.3333V1.66667H15V11.6667Z" fill="#20201E"/>
+											</svg>
+										</button>
+										<button type="button" class="product-card__favorites-btn to-favorites">
+											<svg width="17" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" fill="#20201E" stroke-width="1.25"/>
+											</svg>
+											<!--
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.7201 0.825545C12.5201 -0.674455 9.80343 0.0255452 8.33677 1.74221C6.8701 0.0255452 4.15343 -0.682788 1.95343 0.825545C0.786766 1.62555 0.0534329 2.97555 0.00343289 4.40055C-0.113234 7.63388 2.75343 10.2255 7.12843 14.2005L7.21177 14.2755C7.8451 14.8505 8.8201 14.8505 9.45343 14.2672L9.5451 14.1839C13.9201 10.2172 16.7784 7.62555 16.6701 4.39221C16.6201 2.97555 15.8868 1.62555 14.7201 0.825545ZM8.4201 12.9589L8.33677 13.0422L8.25343 12.9589C4.28677 9.36721 1.6701 6.99221 1.6701 4.58388C1.6701 2.91721 2.9201 1.66721 4.58677 1.66721C5.8701 1.66721 7.1201 2.49221 7.56177 3.63388H9.1201C9.55343 2.49221 10.8034 1.66721 12.0868 1.66721C13.7534 1.66721 15.0034 2.91721 15.0034 4.58388C15.0034 6.99221 12.3868 9.36721 8.4201 12.9589Z" fill="#20201E"/>
+											</svg>
+											-->
+										</button>
+									</div>
+									<div class="product-card__content">
+										<p class="product-card__content-head">
+											<span>Київ</span>
+											<span>Вчора 07:30</span>
+										</p>
+										<h2 class="product-card__content-name">Продам iPhone 16 PRO max оригінал</h2>
+										<p class="product-card__content-price">24 000,00 грн</p>
+									</div>
+								</div>
+							</div>
+							<div class="top-products__item">
+								<div class="product-card">
+									<div class="product-card__wrap-image">
+										<a href="#">
+											<span class="product-card__label-top">top</span>
+											<img src="images/top-products-iphone.png" alt="">
+										</a>
+										<button type="button" class="product-card__favorites-btn message">
+											<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15 0H1.66667C0.75 0 0 0.75 0 1.66667V16.6667L3.33333 13.3333H15C15.9167 13.3333 16.6667 12.5833 16.6667 11.6667V1.66667C16.6667 0.75 15.9167 0 15 0ZM15 11.6667H3.33333L1.66667 13.3333V1.66667H15V11.6667Z" fill="#20201E"/>
+											</svg>
+										</button>
+										<button type="button" class="product-card__favorites-btn to-favorites">
+											<svg width="17" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" fill="#20201E" stroke-width="1.25"/>
+											</svg>
+											<!--
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.7201 0.825545C12.5201 -0.674455 9.80343 0.0255452 8.33677 1.74221C6.8701 0.0255452 4.15343 -0.682788 1.95343 0.825545C0.786766 1.62555 0.0534329 2.97555 0.00343289 4.40055C-0.113234 7.63388 2.75343 10.2255 7.12843 14.2005L7.21177 14.2755C7.8451 14.8505 8.8201 14.8505 9.45343 14.2672L9.5451 14.1839C13.9201 10.2172 16.7784 7.62555 16.6701 4.39221C16.6201 2.97555 15.8868 1.62555 14.7201 0.825545ZM8.4201 12.9589L8.33677 13.0422L8.25343 12.9589C4.28677 9.36721 1.6701 6.99221 1.6701 4.58388C1.6701 2.91721 2.9201 1.66721 4.58677 1.66721C5.8701 1.66721 7.1201 2.49221 7.56177 3.63388H9.1201C9.55343 2.49221 10.8034 1.66721 12.0868 1.66721C13.7534 1.66721 15.0034 2.91721 15.0034 4.58388C15.0034 6.99221 12.3868 9.36721 8.4201 12.9589Z" fill="#20201E"/>
+											</svg>
+											-->
+										</button>
+									</div>
+									<div class="product-card__content">
+										<p class="product-card__content-head">
+											<span>Київ</span>
+											<span>Вчора 07:30</span>
+										</p>
+										<h2 class="product-card__content-name">Продам iPhone 16 PRO max оригінал</h2>
+										<p class="product-card__content-price">24 000,00 грн</p>
+									</div>
+								</div>
+							</div>
+							<div class="top-products__item">
+								<div class="product-card">
+									<div class="product-card__wrap-image">
+										<a href="#">
+											<span class="product-card__label-top">top</span>
+											<img src="images/top-products-iphone.png" alt="">
+										</a>
+										<button type="button" class="product-card__favorites-btn message">
+											<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15 0H1.66667C0.75 0 0 0.75 0 1.66667V16.6667L3.33333 13.3333H15C15.9167 13.3333 16.6667 12.5833 16.6667 11.6667V1.66667C16.6667 0.75 15.9167 0 15 0ZM15 11.6667H3.33333L1.66667 13.3333V1.66667H15V11.6667Z" fill="#20201E"/>
+											</svg>
+										</button>
+										<button type="button" class="product-card__favorites-btn to-favorites">
+											<svg width="17" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" fill="#20201E" stroke-width="1.25"/>
+											</svg>
+											<!--
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.7201 0.825545C12.5201 -0.674455 9.80343 0.0255452 8.33677 1.74221C6.8701 0.0255452 4.15343 -0.682788 1.95343 0.825545C0.786766 1.62555 0.0534329 2.97555 0.00343289 4.40055C-0.113234 7.63388 2.75343 10.2255 7.12843 14.2005L7.21177 14.2755C7.8451 14.8505 8.8201 14.8505 9.45343 14.2672L9.5451 14.1839C13.9201 10.2172 16.7784 7.62555 16.6701 4.39221C16.6201 2.97555 15.8868 1.62555 14.7201 0.825545ZM8.4201 12.9589L8.33677 13.0422L8.25343 12.9589C4.28677 9.36721 1.6701 6.99221 1.6701 4.58388C1.6701 2.91721 2.9201 1.66721 4.58677 1.66721C5.8701 1.66721 7.1201 2.49221 7.56177 3.63388H9.1201C9.55343 2.49221 10.8034 1.66721 12.0868 1.66721C13.7534 1.66721 15.0034 2.91721 15.0034 4.58388C15.0034 6.99221 12.3868 9.36721 8.4201 12.9589Z" fill="#20201E"/>
+											</svg>
+											-->
+										</button>
+									</div>
+									<div class="product-card__content">
+										<p class="product-card__content-head">
+											<span>Київ</span>
+											<span>Вчора 07:30</span>
+										</p>
+										<h2 class="product-card__content-name">Продам iPhone 16 PRO max оригінал</h2>
+										<p class="product-card__content-price">24 000,00 грн</p>
+									</div>
+								</div>
+							</div>
+							<div class="top-products__item">
+								<div class="product-card">
+									<div class="product-card__wrap-image">
+										<a href="#">
+											<span class="product-card__label-top">top</span>
+											<img src="images/top-products-iphone.png" alt="">
+										</a>
+										<button type="button" class="product-card__favorites-btn message">
+											<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15 0H1.66667C0.75 0 0 0.75 0 1.66667V16.6667L3.33333 13.3333H15C15.9167 13.3333 16.6667 12.5833 16.6667 11.6667V1.66667C16.6667 0.75 15.9167 0 15 0ZM15 11.6667H3.33333L1.66667 13.3333V1.66667H15V11.6667Z" fill="#20201E"/>
+											</svg>
+										</button>
+										<button type="button" class="product-card__favorites-btn to-favorites">
+											<svg width="17" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" fill="#20201E" stroke-width="1.25"/>
+											</svg>
+											<!--
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.7201 0.825545C12.5201 -0.674455 9.80343 0.0255452 8.33677 1.74221C6.8701 0.0255452 4.15343 -0.682788 1.95343 0.825545C0.786766 1.62555 0.0534329 2.97555 0.00343289 4.40055C-0.113234 7.63388 2.75343 10.2255 7.12843 14.2005L7.21177 14.2755C7.8451 14.8505 8.8201 14.8505 9.45343 14.2672L9.5451 14.1839C13.9201 10.2172 16.7784 7.62555 16.6701 4.39221C16.6201 2.97555 15.8868 1.62555 14.7201 0.825545ZM8.4201 12.9589L8.33677 13.0422L8.25343 12.9589C4.28677 9.36721 1.6701 6.99221 1.6701 4.58388C1.6701 2.91721 2.9201 1.66721 4.58677 1.66721C5.8701 1.66721 7.1201 2.49221 7.56177 3.63388H9.1201C9.55343 2.49221 10.8034 1.66721 12.0868 1.66721C13.7534 1.66721 15.0034 2.91721 15.0034 4.58388C15.0034 6.99221 12.3868 9.36721 8.4201 12.9589Z" fill="#20201E"/>
+											</svg>
+											-->
+										</button>
+									</div>
+									<div class="product-card__content">
+										<p class="product-card__content-head">
+											<span>Київ</span>
+											<span>Вчора 07:30</span>
+										</p>
+										<h2 class="product-card__content-name">Продам iPhone 16 PRO max оригінал</h2>
+										<p class="product-card__content-price">24 000,00 грн</p>
+									</div>
+								</div>
+							</div>
+							<div class="top-products__item">
+								<div class="product-card">
+									<div class="product-card__wrap-image">
+										<a href="#">
+											<span class="product-card__label-top">top</span>
+											<img src="images/top-products-iphone.png" alt="">
+										</a>
+										<button type="button" class="product-card__favorites-btn message">
+											<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15 0H1.66667C0.75 0 0 0.75 0 1.66667V16.6667L3.33333 13.3333H15C15.9167 13.3333 16.6667 12.5833 16.6667 11.6667V1.66667C16.6667 0.75 15.9167 0 15 0ZM15 11.6667H3.33333L1.66667 13.3333V1.66667H15V11.6667Z" fill="#20201E"/>
+											</svg>
+										</button>
+										<button type="button" class="product-card__favorites-btn to-favorites">
+											<svg width="17" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" fill="#20201E" stroke-width="1.25"/>
+											</svg>
+											<!--
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.7201 0.825545C12.5201 -0.674455 9.80343 0.0255452 8.33677 1.74221C6.8701 0.0255452 4.15343 -0.682788 1.95343 0.825545C0.786766 1.62555 0.0534329 2.97555 0.00343289 4.40055C-0.113234 7.63388 2.75343 10.2255 7.12843 14.2005L7.21177 14.2755C7.8451 14.8505 8.8201 14.8505 9.45343 14.2672L9.5451 14.1839C13.9201 10.2172 16.7784 7.62555 16.6701 4.39221C16.6201 2.97555 15.8868 1.62555 14.7201 0.825545ZM8.4201 12.9589L8.33677 13.0422L8.25343 12.9589C4.28677 9.36721 1.6701 6.99221 1.6701 4.58388C1.6701 2.91721 2.9201 1.66721 4.58677 1.66721C5.8701 1.66721 7.1201 2.49221 7.56177 3.63388H9.1201C9.55343 2.49221 10.8034 1.66721 12.0868 1.66721C13.7534 1.66721 15.0034 2.91721 15.0034 4.58388C15.0034 6.99221 12.3868 9.36721 8.4201 12.9589Z" fill="#20201E"/>
+											</svg>
+											-->
+										</button>
+									</div>
+									<div class="product-card__content">
+										<p class="product-card__content-head">
+											<span>Київ</span>
+											<span>Вчора 07:30</span>
+										</p>
+										<h2 class="product-card__content-name">Продам iPhone 16 PRO max оригінал</h2>
+										<p class="product-card__content-price">24 000,00 грн</p>
+									</div>
+								</div>
+							</div>
+							<div class="top-products__item">
+								<div class="product-card">
+									<div class="product-card__wrap-image">
+										<a href="#">
+											<span class="product-card__label-top">top</span>
+											<img src="images/top-products-iphone.png" alt="">
+										</a>
+										<button type="button" class="product-card__favorites-btn message">
+											<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15 0H1.66667C0.75 0 0 0.75 0 1.66667V16.6667L3.33333 13.3333H15C15.9167 13.3333 16.6667 12.5833 16.6667 11.6667V1.66667C16.6667 0.75 15.9167 0 15 0ZM15 11.6667H3.33333L1.66667 13.3333V1.66667H15V11.6667Z" fill="#20201E"/>
+											</svg>
+										</button>
+										<button type="button" class="product-card__favorites-btn to-favorites">
+											<svg width="17" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" fill="#20201E" stroke-width="1.25"/>
+											</svg>
+											<!--
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.7201 0.825545C12.5201 -0.674455 9.80343 0.0255452 8.33677 1.74221C6.8701 0.0255452 4.15343 -0.682788 1.95343 0.825545C0.786766 1.62555 0.0534329 2.97555 0.00343289 4.40055C-0.113234 7.63388 2.75343 10.2255 7.12843 14.2005L7.21177 14.2755C7.8451 14.8505 8.8201 14.8505 9.45343 14.2672L9.5451 14.1839C13.9201 10.2172 16.7784 7.62555 16.6701 4.39221C16.6201 2.97555 15.8868 1.62555 14.7201 0.825545ZM8.4201 12.9589L8.33677 13.0422L8.25343 12.9589C4.28677 9.36721 1.6701 6.99221 1.6701 4.58388C1.6701 2.91721 2.9201 1.66721 4.58677 1.66721C5.8701 1.66721 7.1201 2.49221 7.56177 3.63388H9.1201C9.55343 2.49221 10.8034 1.66721 12.0868 1.66721C13.7534 1.66721 15.0034 2.91721 15.0034 4.58388C15.0034 6.99221 12.3868 9.36721 8.4201 12.9589Z" fill="#20201E"/>
+											</svg>
+											-->
+										</button>
+									</div>
+									<div class="product-card__content">
+										<p class="product-card__content-head">
+											<span>Київ</span>
+											<span>Вчора 07:30</span>
+										</p>
+										<h2 class="product-card__content-name">Продам iPhone 16 PRO max оригінал</h2>
+										<p class="product-card__content-price">24 000,00 грн</p>
+									</div>
+								</div>
+							</div>
+							<div class="top-products__item">
+								<div class="product-card">
+									<div class="product-card__wrap-image">
+										<a href="#">
+											<span class="product-card__label-top">top</span>
+											<img src="images/top-products-iphone.png" alt="">
+										</a>
+										<button type="button" class="product-card__favorites-btn message">
+											<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15 0H1.66667C0.75 0 0 0.75 0 1.66667V16.6667L3.33333 13.3333H15C15.9167 13.3333 16.6667 12.5833 16.6667 11.6667V1.66667C16.6667 0.75 15.9167 0 15 0ZM15 11.6667H3.33333L1.66667 13.3333V1.66667H15V11.6667Z" fill="#20201E"/>
+											</svg>
+										</button>
+										<button type="button" class="product-card__favorites-btn to-favorites">
+											<svg width="17" height="17" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" fill="#20201E" stroke-width="1.25"/>
+											</svg>
+											<!--
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.7201 0.825545C12.5201 -0.674455 9.80343 0.0255452 8.33677 1.74221C6.8701 0.0255452 4.15343 -0.682788 1.95343 0.825545C0.786766 1.62555 0.0534329 2.97555 0.00343289 4.40055C-0.113234 7.63388 2.75343 10.2255 7.12843 14.2005L7.21177 14.2755C7.8451 14.8505 8.8201 14.8505 9.45343 14.2672L9.5451 14.1839C13.9201 10.2172 16.7784 7.62555 16.6701 4.39221C16.6201 2.97555 15.8868 1.62555 14.7201 0.825545ZM8.4201 12.9589L8.33677 13.0422L8.25343 12.9589C4.28677 9.36721 1.6701 6.99221 1.6701 4.58388C1.6701 2.91721 2.9201 1.66721 4.58677 1.66721C5.8701 1.66721 7.1201 2.49221 7.56177 3.63388H9.1201C9.55343 2.49221 10.8034 1.66721 12.0868 1.66721C13.7534 1.66721 15.0034 2.91721 15.0034 4.58388C15.0034 6.99221 12.3868 9.36721 8.4201 12.9589Z" fill="#20201E"/>
+											</svg>
+											-->
+										</button>
+									</div>
+									<div class="product-card__content">
+										<p class="product-card__content-head">
+											<span>Київ</span>
+											<span>Вчора 07:30</span>
+										</p>
+										<h2 class="product-card__content-name">Продам iPhone 16 PRO max оригінал</h2>
+										<p class="product-card__content-price">24 000,00 грн</p>
+									</div>
+								</div>
+							</div>
+						</div>
+               </div>
+				</div>
+
+				<!-- Favorite -->
+
+         </div>
+      </main>
+		<footer class="footer">
+    <div class="n_container">
+        <div class="footer__columns">
+            <div class="footer__column footer-first-column">
+                <div class="footer__blockLogo">
+                    <img src="images/svg/footer-logo-new.svg" alt="MarketApp">
+                </div>
+                <div class="footer__appButtons">
+                    <a href="#">
+                        <img src="images/svg/footer-app-google-new.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/svg/footer-app-store-new.svg" alt="">
+                    </a>
+                </div>
+                <p class="footer-copyright">2026 MarketApp. Всі права захищені.</p>
+            </div>
+            <div data-da="footer-first-column, 1, 767" class="footer__column">
+                <div class="footer__columnBlock">
+                    <h3>Про нас</h3>
+                    <ul>
+                        <li><a href="#">Про MarketApp</a></li>
+                        <li><a href="#">Мобільний застосунок</a></li>
+                        <li><a href="#">Реклама</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock">
+                    <h3>Навігація</h3>
+                    <ul>
+                        <li><a href="#">Категорії</a></li>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Пошук</a></li>
+                        <li><a href="#">Повідомлення</a></li>
+                        <li><a href="#">Улюблене</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Новини</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock last">
+                    <h3>Допомога</h3>
+                    <ul>
+                        <li><a href="#">Public offer</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	</div>
+	
+   <script src="js/script.min.js?_v=20260906110243"></script>
+	
+</body>
+</html>
