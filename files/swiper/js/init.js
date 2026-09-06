@@ -229,6 +229,63 @@ if (whatThinkAgroTookSlider) {
 
 /* blocks-with-picture-slider -> */
 
+const blocksWithPictureSlider = document.querySelector('.blocks-with-picture-slider');
+if (blocksWithPictureSlider) {
+   const swiper = new Swiper(blocksWithPictureSlider, {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      spaceBetween: 12,
+      grabCursor: true,
+      effect: 'slide',
+      observer: true,
+      observeParents: true,
+      
+      pagination: {
+         el: '#blocks-with-picture-slider-pagination',
+         clickable: true,
+      },
+      autoplay: {
+         delay: 5000,
+         stopOnLastSlide: true,
+         disableOnInteraction: false,
+      },
+      breakpoints: {
+         0: {
+            direction: 'horizontal',
+            autoHeight: true,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            speed: 800,
+         },
+         992: {
+            direction: 'vertical',
+            autoHeight: false,
+            freeMode: true,
+            speed: 3000,
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+         }
+      },
+      on: {
+         breakpoint: function (swiper, params) {
+            const currentDirection = params.direction;
+            
+            if (swiper.params.direction !== currentDirection) {
+               swiper.changeDirection(currentDirection, false);
+            }
+            setTimeout(() => {
+               swiper.update();
+            }, 50);
+         },
+         resize: function (swiper) {
+            swiper.update();
+         }
+      }
+   });
+}
+
+/*
 const blocksWithPictureSlider = document.querySelector('.blocks-with-picture-slider')
 if (blocksWithPictureSlider) {
    new Swiper(blocksWithPictureSlider, {
@@ -238,11 +295,6 @@ if (blocksWithPictureSlider) {
       spaceBetween: 12,
       grabCursor: true,
       effect: 'slide',
-      /*mousewheel: {
-         releaseOnEdges: true,
-         sensitivity: 1,
-         eventsTarget: ".blocks-with-picture-slider",
-      },*/
       pagination: {
          el: '#blocks-with-picture-slider-pagination',
          clickable: true,
@@ -270,6 +322,7 @@ if (blocksWithPictureSlider) {
       },
    });
 }
+*/
 
 /* <- blocks-with-picture-slider */
 
