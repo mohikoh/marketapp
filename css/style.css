@@ -3876,7 +3876,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   background-color: #F3F3F2;
   border-radius: 32px;
   height: 100%;
-  padding: 48px 87px 48px;
+  padding: 48px 74px 48px;
 }
 
 .blocks-with-picture__itemBlock h2 {
@@ -3905,6 +3905,51 @@ body._touch .header .menu__list > li._active .menu__arrow {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.blocks-with-picture__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 20px;
+}
+
+.blocks-with-picture__categories li {
+  list-style: none;
+  width: calc(25% - 20px);
+}
+
+.blocks-with-picture__categories li p {
+  font-size: 13px;
+  line-height: 15px;
+  margin: 16px 0 0 !important;
+  text-align: center;
+  transition: 0.3s ease 0s;
+}
+
+.blocks-with-picture__category {
+  align-items: center;
+  background-color: #E6E6E6;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  height: 88px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 88px;
+}
+
+.blocks-with-picture__category:hover img {
+  transform: scale(0.9);
+}
+
+.blocks-with-picture__category:hover ~ p {
+  color: #2dea2b;
+}
+
+.blocks-with-picture__category img {
+  max-height: 74%;
+  max-width: 74%;
+  transition: 0.2s ease 0s;
 }
 
 .slider-pagination {
@@ -14307,6 +14352,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .blocks-with-picture__items {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     margin-left: -7px;
@@ -14319,11 +14365,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .blocks-with-picture__item:nth-child(1) {
-    width: calc(39% - 14px);
+    width: calc(41% - 8px);
   }
 
   .blocks-with-picture__item:nth-child(2) {
-    width: calc(61% - 14px);
+    width: calc(59% - 20px);
   }
 
   .blocks-with-picture__itemBlockImage,
@@ -16434,6 +16480,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-bottom: 70%;
   }
 
+  .blocks-with-picture__categories {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .blocks-with-picture__categories li {
+    width: calc(20% - 20px);
+  }
+
   .profile__item:nth-child(1) {
     margin-bottom: 13px;
   }
@@ -18213,6 +18268,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     border-radius: 20px;
     margin-bottom: 15px;
     padding-bottom: 100%;
+  }
+
+  .blocks-with-picture__categories li {
+    width: calc(25% - 20px);
   }
 
   .agro-took-service {
@@ -20625,6 +20684,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-right: auto;
   }
 
+  .blocks-with-picture__categories li {
+    width: calc(33.3333% - 20px);
+  }
+
   .wrap-previw-slider .label-top {
     font-size: 13px;
     height: 26px;
@@ -20788,6 +20851,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 360.98px) {
+  .blocks-with-picture__categories li {
+    width: calc(50% - 20px);
+  }
+
   .block-sort-by__box .sidebar-filters-btn:nth-child(2) {
     margin-right: 0;
   }
