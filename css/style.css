@@ -3952,6 +3952,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
   transition: 0.2s ease 0s;
 }
 
+.blocks-with-picture-slider {
+  height: auto;
+  width: 100%;
+}
+
 .slider-pagination {
   margin-top: 20px;
   position: relative !important;
@@ -14369,6 +14374,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .blocks-with-picture__item:nth-child(2) {
+    overflow: hidden;
     width: calc(59% - 20px);
   }
 
@@ -14504,6 +14510,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .for-you .categories__item {
     width: calc(25% - 48px);
+  }
+}
+
+@media (min-width: 992px) {
+  .blocks-with-picture-slider {
+    flex-shrink: 0;
+    min-height: 0;
+  }
+
+  .blocks-with-picture-slider,
+  .blocks-with-picture-slider .swiper-wrapper {
+    height: 514px !important;
+  }
+
+  .blocks-with-picture-slider .swiper-slide {
+    height: calc((100% - 12px) / 2) !important;
+    box-sizing: border-box;
   }
 }
 
