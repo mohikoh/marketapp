@@ -14,7 +14,7 @@
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260907201002">
    <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260907201002">
    <link rel="stylesheet" href="files/custom-select/style.css?_v=20260907201002">
-   <title>Сповіщення - MarketApp</title>
+   <title>Категорії - MarketApp</title>
 </head>
 
 <body>
@@ -194,105 +194,218 @@
 				</div>
 			</div>
 		</header>
-		<main class="main notifications">
+		<main class="main categories">
          <div class="n_container">
 				<div class="page__head">
-					<h1>Сповіщення</h1>
+					<h1>Категорії</h1>
 				</div>
-
-            <div class="notifications__custom-alert"><!-- show -->
-               <p>marketapp.com requests authorization for:</p>
-               <p><img src="images/svg/bell-icon.svg" alt=""> <span>Displaying notifications</span></p>
-               <div class="notifications__custom-alertButtons">
-                  <a href="#">Block</a>
-                  <a href="#">Allow</a>
-               </div>
-               <button type="button" class="notifications__custom-alertClose"><img src="images/svg/close-custom-alert-icon.svg" alt=""></button>
+            <div class="advertisement__block first-block-text text-center">
+               <form action="#" class="categories__search-form">
+                  <div class="form-culumn cat looking"> <!-- show-result -->
+                     <input type="text" placeholder="Пошук">
+                     <button type="button" class="form-culumn-btn-close"> <!-- show -->
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <mask id="mask0_1250_63068" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="35" height="35">
+                              <rect width="35" height="35" fill="#D9D9D9"/>
+                           </mask>
+                           <g mask="url(#mask0_1250_63068)">
+                              <path d="M6.97962 30L5 28.0204L15.5204 17.5L5 6.97962L6.97962 5L17.5 15.5204L28.0204 5L30 6.97962L19.4796 17.5L30 28.0204L28.0204 30L17.5 19.4796L6.97962 30Z" fill="#838382"/>
+                           </g>
+                        </svg>
+                     </button>
+                     <div class="block-with-result">
+                        <div class="block-with-result__block">
+                           <div class="wrap-region-list">
+                              <ul>
+                                 <li class="hidden-no-result">No result</li>
+                                 <li class="hidden-searching">Searching...</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-culumn regions all-country"> <!-- show-result -->
+                     <input type="text" placeholder="Вся Україна">
+                     <button type="button" class="form-culumn-btn-close"> <!-- show -->
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <mask id="mask1_1250_63068" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="35" height="35">
+                              <rect width="35" height="35" fill="#D9D9D9"/>
+                           </mask>
+                           <g mask="url(#mask1_1250_63068)">
+                              <path d="M6.97962 30L5 28.0204L15.5204 17.5L5 6.97962L6.97962 5L17.5 15.5204L28.0204 5L30 6.97962L19.4796 17.5L30 28.0204L28.0204 30L17.5 19.4796L6.97962 30Z" fill="#838382"/>
+                           </g>
+                        </svg>
+                     </button>
+                     <div class="block-with-result">
+                        <div class="block-with-result__block there-is-a-scroll"><!-- there-is-a-scroll -->
+                           <div class="wrap-all-country show">
+                              <ul>
+                                 <li class="border region"><a href="#">All country</a></li>
+                              </ul>
+                              <div class="bg-color">
+                                 <img src="images/svg/search-all-country.svg" alt="" class="icon">
+                                 <div class="content">
+                                    <h5>To use your current location, open Agro Took access in your device settings.</h5>
+                                    <p>You can allow your location to be determined in your browser settings.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="wrap-region-list">
+                              <h6>Select an area</h6>
+                              <ul>
+                                 <!--<li class="region"><a href="#">Odesa region</a></li>
+                                 <li class="region"><a href="#">Dnipropetrovska oblast</a></li>
+                                 <li class="region"><a href="#">Chernihiv region</a></li>
+                                 <li class="region"><a href="#">Zhytomyr region</a></li>
+                                 <li class="region"><a href="#">Zaporizhzhya region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>
+                                 <li class="region"><a href="#">Kyiv region</a></li>-->
+                                 <li class="hidden-no-result">No result</li>
+                                 <li class="hidden-searching">Searching...</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <button type="submit" class="categories__search-submit">Пошук</button>
+               </form>
             </div>
-
-            <!--<div class="notifications__block-center">
-               <div class="wrap-icon">
-                  <img src="images/notifications-block-center-icon.png" alt="">
+            <div class="categories__items">
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-crops.png" alt="Crops">
+                  </a>
+                  <h4 class="categories__name">Дитячий світ</h4>
                </div>
-               <h2>Будьте в курсі всіх важливих подій на платформі!</h2>
-               <p>Порада: Увімкніть сповіщення браузера, щоб залишатися в курсі подій у режимі реального часу!</p>
-            </div>-->
-
-            <div class="notifications__blocks">
-               <div class="notifications__block darker">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has been verified!</h2>
-                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-processing.png" alt="Processing">
+                  </a>
+                  <h4 class="categories__name">Нерухомість</h4>
                </div>
-               <div class="notifications__block darker">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-2.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has not been verified</h2>
-                     <p>Please double-check the information in the ad. Make the necessary corrections and resubmit the ad for verification. If you have any questions, please contact our support.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-grains.png" alt="Grains">
+                  </a>
+                  <h4 class="categories__name">Авто</h4>
                </div>
-               <div class="notifications__block">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has been verified!</h2>
-                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-vegetables.png" alt="Vegetables">
+                  </a>
+                  <h4 class="categories__name">Запчастини</h4>
                </div>
-               <div class="notifications__block">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has been verified!</h2>
-                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-greens.png" alt="Greens">
+                  </a>
+                  <h4 class="categories__name">Робота</h4>
                </div>
-               <div class="notifications__block">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has been verified!</h2>
-                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-seeds-seedlings.png" alt="Seeds & seedlings">
+                  </a>
+                  <h4 class="categories__name">Тварини</h4>
                </div>
-               <div class="notifications__block">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-2.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has been verified!</h2>
-                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-fruits.png" alt="Fruits">
+                  </a>
+                  <h4 class="categories__name">Дім і сад</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-berries.png" alt="Berries">
+                  </a>
+                  <h4 class="categories__name">Електроніка</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-nuts-fruits.png" alt="Nuts & Fruits">
+                  </a>
+                  <h4 class="categories__name">Бізнес та послуги</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-mushrooms.png" alt="Mushrooms">
+                  </a>
+                  <h4 class="categories__name">Житло подобово</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-livestock.png" alt="Livestock">
+                  </a>
+                  <h4 class="categories__name">Мода і стиль</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-bees-honey.png" alt="Bees & honey">
+                  </a>
+                  <h4 class="categories__name">Оренда та прокат</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-vermi-culture.png" alt="Vermi culture">
+                  </a>
+                  <h4 class="categories__name">VХобі, відпочинок і спорт</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-meat.png" alt="Meat">
+                  </a>
+                  <h4 class="categories__name">Мистецтво та антикваріат</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-fish-seafood.png" alt="Fish & seafood">
+                  </a>
+                  <h4 class="categories__name">Віддам безкоштовно</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-dairy.png" alt="Dairy">
+                  </a>
+                  <h4 class="categories__name">Обмін</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-agronomy.png" alt="Agronomy">
+                  </a>
+                  <h4 class="categories__name">До речі, відомі речі</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-feed.png" alt="Feed">
+                  </a>
+                  <h4 class="categories__name">Товари для школи</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-fertilizers-pesticides.png" alt="Fertilizers & pesticides">
+                  </a>
+                  <h4 class="categories__name">Фармацевтика</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-veterinary-drugs.png" alt="Veterinary drugs">
+                  </a>
+                  <h4 class="categories__name">Товари для геймерів</h4>
+               </div>
+               <div class="categories__item">
+                  <a href="#" class="categories__item-wrap-image">
+                     <img src="images/img-cat-coffee-tea.png" alt="Coffee & Tea">
+                  </a>
+                  <h4 class="categories__name">Запчастини: старт бізнесу</h4>
                </div>
             </div>
-
          </div>
       </main>
 		<footer class="footer">
@@ -348,8 +461,8 @@
 	</div>
 	
    <script src="js/script.min.js?_v=20260907201002"></script>
+   
+   <script src="files/js/search-for-categories.js?_v=20260907201002"></script>
 	
-   <script src="files/js/notifications.js?_v=20260907201002"></script>
-
 </body>
 </html>
