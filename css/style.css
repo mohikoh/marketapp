@@ -13606,7 +13606,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .for-you .categories__item .categories__item-wrap-image:hover img {
-  transform: scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .for-you .categories__item .categories__item-wrap-image:hover ~ .categories__name {
