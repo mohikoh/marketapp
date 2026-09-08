@@ -14,7 +14,7 @@
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260908115918">
    <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260908115918">
    <link rel="stylesheet" href="files/custom-select/style.css?_v=20260908115918">
-   <title>Сповіщення - MarketApp</title>
+   <title>Промокод - MarketApp</title>
 </head>
 
 <body>
@@ -194,108 +194,54 @@
 				</div>
 			</div>
 		</header>
-		<main class="main notifications">
+		<main class="main profile">
          <div class="n_container">
 				<div class="page__head">
-					<h1>Сповіщення</h1>
+					<h1>Промокод</h1>
 				</div>
-
-            <div class="notifications__custom-alert"><!-- show -->
-               <p>marketapp.com requests authorization for:</p>
-               <p><img src="images/svg/bell-icon.svg" alt=""> <span>Displaying notifications</span></p>
-               <div class="notifications__custom-alertButtons">
-                  <a href="#">Block</a>
-                  <a href="#">Allow</a>
+            <div class="profile__items">
+               <div class="profile__item">
+                  <div class="referral-program__block">
+                     <div class="promo-code__block">
+                        <div class="promo-code__block-img">
+                           <img src="images/promo-code-image.png" alt="">
+                        </div>
+                        <h2>Ви маєте промокод?</h2>
+                        <p>Введіть його у спеціальне поле та отримайте бонус!</p>
+                        <form>
+                           <div class="wrap-field "><!-- no-valid -->
+                              <input type="text" placeholder="Промокод" value="MARKETAPP">
+                              <p class="no-valid-text">Перевірте, чи правильний промокод і спробуйте знову</p>
+                           </div>
+                           <button type="submit">Активувати</button>
+                        </form>
+                     </div>
+                  </div>
                </div>
-               <button type="button" class="notifications__custom-alertClose"><img src="images/svg/close-custom-alert-icon.svg" alt=""></button>
+               <div class="profile__item">
+                  <div class="profile__itemBlock list-buttons">
+                     <div class="profile__tabButtons">
+                        <a href="#" class="profile__tabButton">Мої оголошення</a>
+                        <a href="#" class="profile__tabButton">Мої відгуки</a>
+                        <a href="#" class="profile__tabButton">Для вас</a>
+                        <a href="#" class="profile__tabButton">Підписки</a>
+                        <a href="#" class="profile__tabButton active">Промокод</a>
+                        <a href="#" class="profile__tabButton">ТОП-розміщення</a>
+                        <a href="#" class="profile__tabButton">Реферальна програма</a>
+                        <a href="#" class="profile__tabButton">Мій QR-код</a>
+                        <a href="#" class="profile__tabButton">Допомога</a>
+                        <a href="#" class="profile__tabButton">Умови використання</a>
+                        <a href="#" class="profile__tabButton">Політика</a>
+                        <a href="#" class="profile__tabButton">Про компанію MarketApp</a>
+                        <a href="#delete-accaunt" class="profile__tabButton delete-account popup-link">Видалити акаунт</a>
+                        <a href="#log-out" class="profile__tabButton log-out popup-link">Вийти з системи</a>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-            <div class="notifications__block-center">
-               <div class="wrap-icon">
-                  <img src="images/notifications-block-center-icon.png" alt="">
-               </div>
-               <h2>Будьте в курсі всіх важливих подій на платформі!</h2>
-               <p>Порада: Увімкніть сповіщення браузера, щоб залишатися в курсі подій у режимі реального часу!</p>
-            </div>
-
-            <!--<div class="notifications__blocks">
-               <div class="notifications__block darker">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has been verified!</h2>
-                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
-               </div>
-               <div class="notifications__block darker">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-2.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has not been verified</h2>
-                     <p>Please double-check the information in the ad. Make the necessary corrections and resubmit the ad for verification. If you have any questions, please contact our support.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
-               </div>
-               <div class="notifications__block">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has been verified!</h2>
-                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
-               </div>
-               <div class="notifications__block">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has been verified!</h2>
-                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
-               </div>
-               <div class="notifications__block">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-1.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has been verified!</h2>
-                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
-               </div>
-               <div class="notifications__block">
-                  <div class="wrap-icon">
-                     <img src="images/svg/notifications-block-icon-2.svg" alt="">
-                  </div>
-                  <div class="notifications__blockInfo">
-                     <h2>Your ad has been verified!</h2>
-                     <p>The ad has been successfully placed on the platform and is now available for buyers.</p>
-                  </div>
-                  <button type="button" class="notifications__blockRemove">
-                     <img src="images/svg/notifications-block-remove-icon.svg" alt="">
-                  </button>
-               </div>
-            </div>-->
-
          </div>
       </main>
-		<footer class="footer">
+      <footer class="footer">
     <div class="n_container">
         <div class="footer__columns">
             <div class="footer__column footer-first-column">
@@ -345,11 +291,59 @@
         </div>
     </div>
 </footer>
-	</div>
-	
-   <script src="js/script.min.js?_v=20260908115918"></script>
-	
-   <script src="files/js/notifications.js?_v=20260908115918"></script>
 
+      <div id="inviting-text" class="popup popup-inviting-text prome-code"><!-- open -->
+         <div class="popup__body">
+            <div class="popup__content">
+               <a href="" class="popup__close close-popup">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M17.19 0.403334C16.67 -0.116666 15.83 -0.116666 15.31 0.403334L8.79 6.91L2.27 0.39C1.75 -0.13 0.91 -0.13 0.39 0.39C-0.13 0.91 -0.13 1.75 0.39 2.27L6.91 8.79L0.39 15.31C-0.13 15.83 -0.13 16.67 0.39 17.19C0.91 17.71 1.75 17.71 2.27 17.19L8.79 10.67L15.31 17.19C15.83 17.71 16.67 17.71 17.19 17.19C17.71 16.67 17.71 15.83 17.19 15.31L10.67 8.79L17.19 2.27C17.6967 1.76333 17.6967 0.91 17.19 0.403334V0.403334Z" fill="#838382"/>
+                  </svg>
+               </a>
+               <div class="popup-inviting-text__blockIcon">
+                  <img src="images/popup-promo-code-image.png" alt="">
+               </div>
+               <h3 class="popup-inviting-text__title">Вітаємо!</h3>
+               <p>Ваші товари тепер у пріоритеті у пошуку на цілих 6 місяців! Розмістіть оголошення та залучайте більше покупців!</p>
+               <a href="#" class="popup-inviting-text__button">Перевірити</a>
+               <a href="#" class="popup-inviting-text__button no-bg">Створити оголошення</a>
+            </div>
+         </div>
+      </div>
+
+      <div id="delete-accaunt" class="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+               <!--<a href="" class="popup__close close-popup">X</a>-->
+         
+               <h2>Видалити обліковий запис</h2>
+               <p>Ви впевнені, що хочете видалити цей обліковий запис?</p>
+               <div class="popup__wrap-bottoms">
+                  <a href="/" class="popup__close">Видалити</a>
+                  <a href="" class="popup__close close-popup">Скасувати</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="log-out" class="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+               <!--<a href="" class="popup__close close-popup">X</a>-->
+         
+               <h2>Вийти</h2>
+               <p>Ви впевнені, що хочете вийти?</p>
+               <div class="popup__wrap-bottoms">
+                  <a href="/log-in.html" class="popup__close">Вийти</a>
+                  <a href="" class="popup__close close-popup">Скасувати</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   
+   <script src="js/script.min.js?_v=20260908115918"></script>
+   
 </body>
 </html>
