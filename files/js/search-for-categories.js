@@ -71,9 +71,12 @@ document.addEventListener('DOMContentLoaded', function() {
       }
    }
    // Hides the block with results by clicking on All country
-   document.querySelector('.border.region a').addEventListener('click', () => {
-      document.querySelector('.form-culumn.regions').classList.remove('show-result');
-   });
+   const regionLink = document.querySelector('.border.region a');
+   if (regionLink) {
+      regionLink.addEventListener('click', () => {
+         document.querySelector('.form-culumn.regions').classList.remove('show-result');
+      });
+   }
    // <- For regions
 
    // Track input into the field
