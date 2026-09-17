@@ -25,80 +25,115 @@ $(document).ready(function () { // Make sure the DOM is fully loaded before init
    });
 
    $('#sidebar-filters-categories').select2({
-      placeholder: "Category",
+      placeholder: "Категорія",
       theme: 'sidebar-filters',
-      allowClear: true
+      allowClear: true,
+      language: {
+         noResults: function() {
+            return "Нічого не знайдено";
+         }
+      }
    });
    $('#sidebar-filters-categories').on('select2:open', function () {
 
       setTimeout(function () {
-         $('.select2-container--open .select2-search__field').attr('placeholder', 'Поиск');
+         $('.select2-container--open .select2-search__field').attr('placeholder', 'Пошук');
       }, 0);
    });
    $('#sidebar-filters-address').select2({
       placeholder: "Address",
       theme: 'sidebar-filters',
-      allowClear: true
+      allowClear: true,
+      language: {
+         noResults: function() {
+            return "Нічого не знайдено";
+         }
+      }
    });
    $('#sidebar-filters-address').on('select2:open', function () {
 
       setTimeout(function () {
-         $('.select2-container--open .select2-search__field').attr('placeholder', 'Поиск');
+         $('.select2-container--open .select2-search__field').attr('placeholder', 'Пошук');
       }, 0);
    });
    $('#sidebar-filters-subcategory').select2({
-      placeholder: "Подкатегория",
+      placeholder: "Підкатегорія",
       theme: 'sidebar-filters',
-      allowClear: true
+      allowClear: true,
+      language: {
+         noResults: function() {
+            return "Нічого не знайдено";
+         }
+      }
    });
    $('#sidebar-filters-subcategory').on('select2:open', function () {
 
       setTimeout(function () {
-         $('.select2-container--open .select2-search__field').attr('placeholder', 'Поиск');
+         $('.select2-container--open .select2-search__field').attr('placeholder', 'Пошук');
       }, 0);
    });
    $('#sidebar-filters-country').select2({
       placeholder: "Страна",
       theme: 'sidebar-filters',
-      allowClear: true
+      allowClear: true,
+      language: {
+         noResults: function() {
+            return "Нічого не знайдено";
+         }
+      }
    });
    $('#sidebar-filters-country').on('select2:open', function () {
 
       setTimeout(function () {
-         $('.select2-container--open .select2-search__field').attr('placeholder', 'Поиск');
+         $('.select2-container--open .select2-search__field').attr('placeholder', 'Пошук');
       }, 0);
    });
    $('#sidebar-filters-provinces').select2({
       placeholder: "Провинция",
       theme: 'sidebar-filters',
-      allowClear: true
+      allowClear: true,
+      language: {
+         noResults: function() {
+            return "Нічого не знайдено";
+         }
+      }
    });
    $('#sidebar-filters-provinces').on('select2:open', function () {
 
       setTimeout(function () {
-         $('.select2-container--open .select2-search__field').attr('placeholder', 'Поиск');
+         $('.select2-container--open .select2-search__field').attr('placeholder', 'Пошук');
       }, 0);
    });
    $('#sidebar-filters-autonomous-community').select2({
       placeholder: "Автономное сообщество",
       theme: 'sidebar-filters',
-      allowClear: true
+      allowClear: true,
+      language: {
+         noResults: function() {
+            return "Нічого не знайдено";
+         }
+      }
    });
    $('#sidebar-filters-autonomous-community').on('select2:open', function () {
 
       setTimeout(function () {
-         $('.select2-container--open .select2-search__field').attr('placeholder', 'Поиск');
+         $('.select2-container--open .select2-search__field').attr('placeholder', 'Пошук');
       }, 0);
    });
    $('#sidebar-filters-city').select2({
-      placeholder: "Город",
+      placeholder: "Місто",
       theme: 'sidebar-filters',
-      allowClear: true
+      allowClear: true,
+      language: {
+         noResults: function() {
+            return "Нічого не знайдено";
+         }
+      }
    });
    $('#sidebar-filters-city').on('select2:open', function () {
 
       setTimeout(function () {
-         $('.select2-container--open .select2-search__field').attr('placeholder', 'Поиск');
+         $('.select2-container--open .select2-search__field').attr('placeholder', 'Пошук');
       }, 0);
    });
 });
