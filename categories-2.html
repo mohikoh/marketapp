@@ -6,14 +6,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20260908115918" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20260908115918" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.min.css?_v=20260908115918">
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20260917235315" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20260917235315" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260917235315">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260908115918">
-   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260908115918">
-   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260908115918">
-   <link rel="stylesheet" href="files/custom-select/style.css?_v=20260908115918">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260917235315">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260917235315">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260917235315">
+   <link rel="stylesheet" href="files/custom-select/style.css?_v=20260917235315">
    <title>Категорії - MarketApp</title>
 </head>
 
@@ -201,7 +201,7 @@
 				</div>
             <div class="advertisement__block first-block-text text-center">
                <form action="#" class="categories__search-form">
-                  <div class="form-culumn cat looking"> <!-- show-result -->
+                  <div class="form-culumn cat looking "> <!-- show-result -->
                      <input type="text" placeholder="Пошук">
                      <button type="button" class="form-culumn-btn-close"> <!-- show -->
                         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -216,7 +216,20 @@
                      <div class="block-with-result">
                         <div class="block-with-result__block">
                            <div class="wrap-region-list">
+                              <p>Ви нещодавно шукали</p>
                               <ul>
+                                 <li>iPhone 16 PRO max оригінал <button type="button" class="search__block-with-result--button"></button></li>
+                                 <li class="hidden-no-result">No result</li>
+                                 <li class="hidden-searching">Searching...</li>
+                              </ul>
+                           </div>
+                           <div class="wrap-region-list">
+                              <p>Рекомендації</p>
+                              <ul>
+                                 <li>16 PRO max оригінал <span>Телефони та аксесуари</span></li>
+                                 <li>16 PRO max оригінал <span>Телефони та аксесуари</span></li>
+                                 <li>16 PRO max оригінал <span>Телефони та аксесуари</span></li>
+                                 <li>16 PRO max оригінал <span>Телефони та аксесуари</span></li>
                                  <li class="hidden-no-result">No result</li>
                                  <li class="hidden-searching">Searching...</li>
                               </ul>
@@ -224,7 +237,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="form-culumn regions all-country"> <!-- show-result -->
+                  <div class="form-culumn regions all-country "> <!-- show-result -->
                      <input type="text" placeholder="Вся Україна">
                      <button type="button" class="form-culumn-btn-close"> <!-- show -->
                         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -237,8 +250,8 @@
                         </svg>
                      </button>
                      <div class="block-with-result">
-                        <div class="block-with-result__block there-is-a-scroll"><!-- there-is-a-scroll -->
-                           <div class="wrap-all-country show">
+                        <div class="block-with-result__block">
+                           <!--<div class="wrap-all-country show">
                               <ul>
                                  <li class="border region"><a href="#">All country</a></li>
                               </ul>
@@ -249,27 +262,25 @@
                                     <p>You can allow your location to be determined in your browser settings.</p>
                                  </div>
                               </div>
-                           </div>
-                           <div class="wrap-region-list">
-                              <h6>Select an area</h6>
+                           </div>-->
+                           <div class="wrap-region-list show"><!-- show -->
+                              <!--<h6>Select an area</h6>-->
                               <ul>
-                                 <!--<li class="region"><a href="#">Odesa region</a></li>
-                                 <li class="region"><a href="#">Dnipropetrovska oblast</a></li>
-                                 <li class="region"><a href="#">Chernihiv region</a></li>
-                                 <li class="region"><a href="#">Zhytomyr region</a></li>
-                                 <li class="region"><a href="#">Zaporizhzhya region</a></li>
-                                 <li class="region"><a href="#">Kyiv region</a></li>
-                                 <li class="region"><a href="#">Kyiv region</a></li>
-                                 <li class="region"><a href="#">Kyiv region</a></li>
-                                 <li class="region"><a href="#">Kyiv region</a></li>
-                                 <li class="region"><a href="#">Kyiv region</a></li>
-                                 <li class="region"><a href="#">Kyiv region</a></li>
-                                 <li class="region"><a href="#">Kyiv region</a></li>
-                                 <li class="region"><a href="#">Kyiv region</a></li>
-                                 <li class="region"><a href="#">Kyiv region</a></li>
-                                 <li class="region"><a href="#">Kyiv region</a></li>-->
-                                 <li class="hidden-no-result">No result</li>
-                                 <li class="hidden-searching">Searching...</li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
+                                 <li class="region"><a href="#">Київ</a></li>
                               </ul>
                            </div>
                         </div>
@@ -479,9 +490,9 @@
 </footer>
 	</div>
 	
-   <script src="js/script.min.js?_v=20260908115918"></script>
+   <script src="js/script.min.js?_v=20260917235315"></script>
    
-   <script src="files/js/search-for-categories.js?_v=20260908115918"></script>
+   <script src="files/js/search-for-categories.js?_v=20260917235315"></script>
 	
 </body>
 </html>

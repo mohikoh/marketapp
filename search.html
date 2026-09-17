@@ -14,7 +14,7 @@
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260917235315">
    <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260917235315">
    <link rel="stylesheet" href="files/custom-select/style.css?_v=20260917235315">
-   <title>Favorite - MarketApp</title>
+   <title>Пошук - MarketApp</title>
 </head>
 
 <body>
@@ -194,10 +194,10 @@
 				</div>
 			</div>
 		</header>
-		<main class="main favorite there-are-chosen-ones">
+		<main class="main search">
          <div class="n_container">
 				<div class="page__head there-is-a-button">
-					<h1>Збережені оголощення</h1>
+					<h1>Пошук</h1>
                <button id="show-sidebar" type="button" class="favorite__btn-show-filter">
                   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                      <path d="m487.976 0h-463.948c-21.318 0-32.075 25.866-16.97 40.971l184.942 184.97v206.059c0 7.831 3.821 15.17 10.237 19.662l80 55.98c15.783 11.048 37.763-.149 37.763-19.662v-262.039l184.947-184.97c15.074-15.075 4.391-40.971-16.971-40.971z"/>
@@ -205,43 +205,215 @@
                </button>
 				</div>
 
-				<!-- Favorite -->
+				<div class="fs__wrap-form search-page "><!--- show-block-with-result -->
+					<form action="#">
+						<input type="text" placeholder="Пошук">
+						<button type="submit">Пошук</button>
+					</form>
+					<div class="search__block-with-result">
+						<div class="search__block-with-resultContent">
+							<div class="search__block-with-result--block">
+								<p>Ви нещодавно шукали</p>
+								<!-- "Ви нещодавно шукали" зберігаємо останні 5 пошукових запитів -->
+								<ul>
+									<li>
+										<a href="#">iPhone 16 PRO max оригінал</a>
+										<button type="button" class="search__block-with-result--button"></button>
+									</li>
+									<li>
+										<a href="#">16 PRO max оригінал</a>
+										<button type="button" class="search__block-with-result--button"></button>
+									</li>
+									<li>
+										<a href="#">iPhone 16 PRO</a>
+										<button type="button" class="search__block-with-result--button"></button>
+									</li>
+									<li>
+										<a href="#">iPhone 16 PRO max</a>
+										<button type="button" class="search__block-with-result--button"></button>
+									</li>
+									<li>
+										<a href="#">iPhone оригінал</a>
+										<button type="button" class="search__block-with-result--button"></button>
+									</li>
+								</ul>
+							</div>
+							<div class="search__block-with-result--block">
+								<p>Рекомендації</p>
+								<ul>
+									<li>
+										<a href="#">16 PRO max оригінал <span>Телефони та аксесуари</span></a>
+									</li>
+									<li>
+										<a href="#">16 PRO max оригінал <span>Телефони та аксесуари</span></a>
+									</li>
+									<li>
+										<a href="#">16 PRO max оригінал <span>Телефони та аксесуари</span></a>
+									</li>
+									<li>
+										<a href="#">16 PRO max оригінал <span>Телефони та аксесуари</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<div class="favorite__items">
 					<div class="favorite__item">
                   <aside id="sidebar-sort-by" class="sidebar-filters">
-                     <form action="#">
-								<div class="block-sort-by">
-									<div data-spollers class="block"><!-- data-one-spoller -->
-										<div class="block__item">
-											<button tabindex="-1" type="button" data-spoller class="block__title">Сортувати за</button>
-											<div class="block__text">
-												<div class="block__text-content">
-													<div class="block-sort-by__boxs">
-														<div class="block-sort-by__box">
-															<label>Ціна</label>
+                     <form>
+                        <div class="block-sort-by">
+                           <div data-spollers class="block">
+                              <div class="block__item">
+                                 <button tabindex="-1" type="button" data-spoller class="block__title first-level-title">Фільтри</button>
+                                 <div class="block__text">
+                                    <div class="block__text-content">
+                                       <div class="wrap-select-form">
+                                          <input type="hidden" name="sidebar-filters-select-categories">
+                                          <select id="sidebar-filters-categories">
+                                             <option value="" selected disabled>Категорія</option>
+                                             <option value="Усі категорії">Усі категорії</option>
+                                             <option value="Дитячий світ">Дитячий світ</option>
+                                             <option value="Нерухомість">Нерухомість</option>
+                                             <option value="Авто">Авто</option>
+                                             <option value="Запчастини">Запчастини</option>
+                                             <option value="Робота">Робота</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                             <option value="Тварини">Тварини</option>
+                                          </select>
+                                       </div>
+                                       <div class="wrap-select-form">
+                                          <input type="hidden" name="sidebar-filters-select-subcategory">
+                                          <select id="sidebar-filters-subcategory">
+                                             <option value="" selected disabled>Підкатегорія</option>
+                                             <option value="Підкатегорія 1">Підкатегорія 1</option>
+                                             <option value="Підкатегорія 2">Підкатегорія 2</option>
+                                             <option value="Підкатегорія 3">Підкатегорія 3</option>
+                                             <option value="Підкатегорія 4">Підкатегорія 4</option>
+                                             <option value="Підкатегорія 5">Підкатегорія 5</option>
+                                          </select>
+                                       </div>
+                                       <div class="wrap-select-form">
+                                          <input type="hidden" name="sidebar-filters-select-city">
+                                          <select id="sidebar-filters-city">
+                                             <option value="" selected disabled>Місто</option>
+                                             <option value="Місто 1">Місто 1</option>
+                                             <option value="Місто 2">Місто 2</option>
+                                             <option value="Місто 3">Місто 3</option>
+                                             <option value="Місто 4">Місто 4</option>
+                                             <option value="Місто 5">Місто 5</option>
+                                          </select>
+                                       </div>
+													<div class="block-sort-by__box">
+														<label>Ціна</label>
+														<div class="sidebar-filters-btn">
+															<input type="radio" name="price" value="">
+															<span class="sidebar-filters-btn-checked">Договірна</span>
+														</div>
+														<div class="sidebar-filters-btn">
+															<input type="radio" name="price" value="" data-toggle-target="price-checked">
+															<span class="sidebar-filters-btn-checked">Ціна</span>
+														</div>
+														<div class="block-sort-by__box--wrap-fields hidden" data-toggle-content="price-checked">
+															<input type="number" placeholder="Ціна від">
+                                          	<input type="number" placeholder="Ціна до">
+														</div>
+														<div class="sidebar-filters-wrap-btns three-btns">
 															<div class="sidebar-filters-btn">
-																<input type="radio" name="price" value="">
-																<span class="sidebar-filters-btn-checked">За зростанням</span>
+																<input type="radio" name="currency" value="₴">
+																<span class="sidebar-filters-btn-checked">₴</span>
 															</div>
 															<div class="sidebar-filters-btn">
-																<input type="radio" name="price" value="High to Low">
-																<span class="sidebar-filters-btn-checked">За зниженням</span>
+																<input type="radio" name="currency" value="$">
+																<span class="sidebar-filters-btn-checked">$</span>
+															</div>
+															<div class="sidebar-filters-btn">
+																<input type="radio" name="currency" value="€">
+																<span class="sidebar-filters-btn-checked">€</span>
 															</div>
 														</div>
-														<div class="block-sort-by__box">
-															<label>Дата публікаціі</label>
+													</div>
+													<div class="block-sort-by__box">
+														<label>Стан</label>
+														<div class="sidebar-filters-btn">
+															<input type="radio" name="state" value="">
+															<span class="sidebar-filters-btn-checked">Новий</span>
+														</div>
+														<div class="sidebar-filters-btn">
+															<input type="radio" name="state" value="">
+															<span class="sidebar-filters-btn-checked">Б/У</span>
+														</div>
+													</div>
+													<div class="block-sort-by__box">
+														<label>Доставка</label>
+														<div class="sidebar-filters-btn">
+															<input type="radio" name="delivery" value="">
+															<span class="sidebar-filters-btn-checked">Доставка</span>
+														</div>
+														<div class="sidebar-filters-btn">
+															<input type="radio" name="delivery" value="">
+															<span class="sidebar-filters-btn-checked">Самовивіз</span>
+														</div>
+													</div>
+													<div class="block-sort-by__wrap-buttons">
+														<button type="button" class="block-sort-by__apply">Застосувати</button>
+														<button type="reset" class="block-sort-by__cast">Скинути</button>
+													</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="block-sort-by">
+                           <div data-spollers class="block">
+                              <div class="block__item">
+                                 <button tabindex="-1" type="button" data-spoller class="block__title first-level-title">Сортувати за</button>
+                                 <div class="block__text">
+                                    <div class="block__text-content">
+
+													<div class="block-sort-by__box">
+														<label>Ціна</label>
+														<div class="sidebar-filters-wrap-btns full-width-btns">
 															<div class="sidebar-filters-btn">
-																<input type="radio" name="publication-date" value="">
-																<span class="sidebar-filters-btn-checked">Від найновіших</span>
+																<input type="radio" name="price1" value="">
+																<span class="sidebar-filters-btn-checked">Спочатку висока</span>
 															</div>
 															<div class="sidebar-filters-btn">
-																<input type="radio" name="publication-date" value="">
-																<span class="sidebar-filters-btn-checked">Від найдавніших</span>
+																<input type="radio" name="price1" value="">
+																<span class="sidebar-filters-btn-checked">Спочатку висока</span>
 															</div>
 														</div>
-														<div class="block-sort-by__box">
-															<label>За алфавітом</label>
+													</div>
+
+													<div class="block-sort-by__box">
+														<label>Новий продукт</label>
+														<div class="sidebar-filters-wrap-btns full-width-btns">
+															<div class="sidebar-filters-btn">
+																<input type="radio" name="new-product" value="">
+																<span class="sidebar-filters-btn-checked">Старий до нового</span>
+															</div>
+															<div class="sidebar-filters-btn">
+																<input type="radio" name="new-product" value="">
+																<span class="sidebar-filters-btn-checked">Новий до старого</span>
+															</div>
+														</div>
+													</div>
+
+													<div class="block-sort-by__box">
+														<label>За абеткою</label>
+														<div class="sidebar-filters-wrap-btns full-width-btns">
 															<div class="sidebar-filters-btn">
 																<input type="radio" name="alphabetically" value="">
 																<span class="sidebar-filters-btn-checked">Від А до Я</span>
@@ -252,19 +424,31 @@
 															</div>
 														</div>
 													</div>
-													<div class="block-sort-by__wrap-buttons">
+
+													<!--<div class="block-sort-by__wrap-buttons">
 														<button type="button" class="block-sort-by__apply">Застосувати</button>
 														<button type="reset" class="block-sort-by__cast">Скинути</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</form>
+													</div>-->
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
                   </aside>
                </div>
 					<div class="favorite__item">
+
+				  		<!--<div class="no-result">
+                     <div class="no-result__blockIcon">
+                        <img src="images/no-result-icon-new.png" alt="">
+                     </div>
+                     <h2>На жаль, нічого не було знайдено</h2>
+							<p>Перевірте правильність написання запиту, спробуйте використати синоніми або більш загальні запити.</p>
+							<button type="button" class="no-result__button">Скинути фільтри</button>
+						</div>-->
+
                   <div class="top-products__items">
 							<div class="top-products__item">
 								<div class="product-card top">
@@ -564,10 +748,31 @@
 								</div>
 							</div>
 						</div>
+
+						<!--<div class="page-blog__pagination">
+							<nav class="navigation pagination" aria-label="Записи">
+								<h2 class="screen-reader-text">Навігація за записами</h2>
+								<div class="nav-links">
+									<a class="prev page-numbers" href="https://site.example/news/page/2/">
+										<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.34089 1.78516L1.52271 8.60334L8.34089 15.4215" stroke="#4DA172" stroke-width="2.27273" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<span aria-current="page" class="page-numbers current">1</span>
+									<a class="page-numbers" href="https://site.example/news/page/2/">2</a>
+									<span class="page-numbers dots">…</span>
+									<a class="page-numbers" href="https://site.example/news/page/5/">5</a>
+									<a class="next page-numbers" href="https://site.example/news/page/3/">
+										<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.65918 1.78516L8.47736 8.60334L1.65918 15.4215" stroke="#4DA172" stroke-width="2.27273" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</nav>
+						</div>-->
+
                </div>
 				</div>
-
-				<!-- Favorite -->
 
          </div>
       </main>
@@ -624,6 +829,64 @@
 	</div>
 	
    <script src="js/script.min.js?_v=20260917235315"></script>
+
+   <script src="files/js/jquery-3.6.1.min.js?_v=20260917235315"></script>
+
+   <script src="files/select2/js/select2.full.min.js?_v=20260917235315"></script>
+   <script src="files/select2/js/init.js?_v=20260917235315"></script>
+
+   <script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const searchWrap = document.querySelector('.fs__wrap-form.search-page');
+			const input = searchWrap.querySelector('input[type="text"]');
+			const resultBlock = searchWrap.querySelector('.search__block-with-result');
+
+			// При вводе — если хоть что-то введено, добавляем класс
+			input.addEventListener('input', function () {
+				if (input.value.trim().length > 0) {
+					searchWrap.classList.add('show-block-with-result');
+				}
+			});
+
+			// При фокусе или клике — всегда добавляем класс
+			input.addEventListener('focus', function () {
+				searchWrap.classList.add('show-block-with-result');
+			});
+
+			input.addEventListener('click', function () {
+				searchWrap.classList.add('show-block-with-result');
+			});
+
+			// При клике на ссылку — вставляем текст и отменяем переход
+			resultBlock.addEventListener('click', function (e) {
+				const target = e.target;
+				if (target.tagName.toLowerCase() === 'a') {
+					e.preventDefault(); // отменяем переход
+					input.value = target.textContent.trim();
+					searchWrap.classList.remove('show-block-with-result');
+				}
+			});
+
+			// При клике вне блока — убираем класс
+			document.addEventListener('click', function (e) {
+				if (!searchWrap.contains(e.target)) {
+					searchWrap.classList.remove('show-block-with-result');
+				}
+			});
+
+			// Відстеження кнопки Ціна активна чи ні
+			setInterval(() => {
+				document.querySelectorAll('[data-toggle-target]').forEach(input => {
+					const target = document.querySelector(`[data-toggle-content="${input.dataset.toggleTarget}"]`);
+					if (!target) {
+						return;
+					}
+					target.classList.toggle('hidden', !input.checked);
+				});
+			}, 30);
+
+		});
+	</script>
 	
 </body>
 </html>

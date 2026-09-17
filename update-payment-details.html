@@ -14,7 +14,7 @@
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260917235315">
    <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260917235315">
    <link rel="stylesheet" href="files/custom-select/style.css?_v=20260917235315">
-   <title>Мобільний додаток - MarketApp</title>
+   <title>Скасувати передплату - MarketApp</title>
 </head>
 
 <body>
@@ -194,64 +194,69 @@
 				</div>
 			</div>
 		</header>
-		<main class="main mobile-application">
+		<main class="main update-payment-details">
          <div class="n_container">
 				<div class="page__head">
-					<h1>Мобільний додаток</h1>
+					<h1>Скасувати передплату</h1>
 				</div>
-
-            <h2 class="mobile-application__title">Купуйте і продавайте з MarketApp легко</h2>
-
-            <div class="mobile-application__columns">
-               <div class="mobile-application__column">
-                  <div class="mobile-application__columnBlockIcon">
-                     <img src="images/svg/mobile-application-icon-1.svg" alt="">
-                  </div>
-                  <h3 class="mobile-application__columnTitle">Знаходьте найкращі пропозиції</h3>
-                  <p>Швидко шукайте потрібне серед тисяч оголошень. Фільтри за ціною, містом і станом товару допомагають дібрати саме той варіант.</p>
-               </div>
-               <div class="mobile-application__column">
-                  <div class="mobile-application__columnBlockIcon">
-                     <img src="images/svg/mobile-application-icon-2.svg" alt="">
-                  </div>
-                  <h3 class="mobile-application__columnTitle">Ведіть угоди онлайн</h3>
-                  <p> Спілкуйтеся з продавцями й покупцями просто в застосунку. Уточнюйте деталі та домовляйтеся про зустріч у зручний час.</p>
-               </div>
-               <div class="mobile-application__column">
-                  <div class="mobile-application__columnBlockIcon">
-                     <img src="images/svg/mobile-application-icon-3.svg" alt="">
-                  </div>
-                  <h3 class="mobile-application__columnTitle">Продавайте більше й швидше</h3>
-                  <p>Створюйте помітні оголошення, стежте за переглядами й підіймайте товар у пошуку, коли потрібен швидкий результат.</p>
-               </div>
-            </div>
-
-            <div class="marketapp__items">
-               <div class="marketapp__item">
-                  <h3 class="marketapp__title">MarketApp — надійний помічник у щоденних покупках</h3>
-                  <p class="marketapp__text">MarketApp — це зручний спосіб продати непотрібне й знайти потрібне.<br> Завантажуйте застосунок і починайте вже сьогодні.</p>
-               </div>
-               <div class="marketapp__item">
-                  <div class="marketapp__wrap-buttons">
-                     <div class="marketapp__wrap-button">
-                        <a href="#">
-                           <img src="images/svg/agro-took-service-google-play-new-big.svg" alt="">
-                        </a>
-                        <p>Завантажити для Android</p>
+            
+            <div class="payment__block js-wrap-payment-form">
+               <form>
+                  <div class="payment__columns">
+                     <div class="payment__column">
+                        <h2 class="payment__columnTitle">Як ви бажаєте заплатити?</h2>
+                        <p class="payment__columnText">Виберіть зручний для вас спосіб оплати</p>
+                        <form class="js-wrap-payment-form">
+                           <div class="payment__columnRadioButtons">
+                              <label id="payment-card">
+                                 <input type="radio" name="payment-checked" checked>
+                                 <img src="images/svg/payment-card-icon.svg" alt="">Card
+                              </label>
+                              <label id="payment-google">
+                                 <input type="radio" name="payment-checked">
+                                 <img src="images/svg/payment-google-icon.svg" alt="">Pay
+                              </label>
+                              <label id="payment-apple">
+                                 <input type="radio" name="payment-checked">
+                                 <img src="images/svg/payment-apple-pay-icon.svg" alt="">Apple Pay
+                              </label>
+                           </div>
+                           <div class="payment__columnBlockCard show">
+                              <div class="payment__columnBlockCard-content">
+                                 <h4>Надайте платіжну інформацію</h4>
+                                 <label for="number-card">Номер платіжної картки</label>
+                                 <div class="wrap-field">
+                                    <input type="text" id="number-card">
+                                 </div>
+                                 <div class="wrap-two-fields">
+                                    <div class="wrap-two-field">
+                                       <label for="valid-until">Дійсно до</label>
+                                       <div class="wrap-field">
+                                          <input type="text" id="valid-until">
+                                       </div>
+                                    </div>
+                                    <div class="wrap-two-field">
+                                       <label for="cvv">СVV</label>
+                                       <div class="wrap-field">
+                                          <input type="text" id="cvv">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <label class="label-checkbox"><input type="checkbox"> Збережіть дані для наступного платежу</label>
+                              </div>
+                              <div class="widget-buttons-wrap-buttons">
+                                 <button type="submit" disabled>Оновити</button>
+                              </div>
+                           </div>
+                        </form>
                      </div>
-                     <div class="marketapp__wrap-button">
-                        <a href="#">
-                           <img src="images/svg/agro-took-service-app-store-new-big.svg" alt="">
-                        </a>
-                        <p>Завантажити для iOS</p>
-                     </div>
                   </div>
-               </div>
+               </form>
             </div>
 
          </div>
       </main>
-		<footer class="footer">
+      <footer class="footer">
     <div class="n_container">
         <div class="footer__columns">
             <div class="footer__column footer-first-column">
@@ -301,9 +306,122 @@
         </div>
     </div>
 </footer>
-	</div>
-	
+   </div>
+   
    <script src="js/script.min.js?_v=20260917235315"></script>
-	
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+         const wrapPaymentForm = document.querySelector(".js-wrap-payment-form");
+
+         if (!wrapPaymentForm) {
+            return;
+         }
+
+         const paymentCard = document.getElementById("payment-card");
+         const paymentGoogle = document.getElementById("payment-google");
+         const paymentApple = document.getElementById("payment-apple");
+
+         const paymentColumnBlockCard = wrapPaymentForm.querySelector(".payment__columnBlockCard");
+
+         const numberCard = wrapPaymentForm.querySelector("#number-card");
+         const validUntil = wrapPaymentForm.querySelector("#valid-until");
+         const cvv = wrapPaymentForm.querySelector("#cvv");
+
+         const submitButton = wrapPaymentForm.querySelector('button[type="submit"]');
+
+         function toggleValidClass(input, isValid) {
+            input.parentNode.classList.toggle("is-valid", isValid);
+         }
+
+         function validateCardNumber(input) {
+
+            input.value = input.value.replace(/\D/g, "").substring(0, 16);
+            input.value = input.value.replace(/(\d{4})/g, "$1 ").trim();
+            const isValid = input.value.length === 19;
+            toggleValidClass(input, isValid);
+            return isValid;
+         }
+
+         function validateValidUntil(input) {
+
+            let value = input.value.replace(/\D/g, "").substring(0, 4);
+
+            if (value.length > 2) {
+               value = value.substring(0, 2) + "/" + value.substring(2);
+            }
+
+            input.value = value;
+
+            let isValid = false;
+
+            if (value.length === 5) {
+               const [month, year] = value.split("/").map(Number);
+               isValid = month >= 1 && month <= 12 && year >= 0 && year <= 99;
+            }
+            toggleValidClass(input, isValid);
+            return isValid;
+         }
+
+         function validateCVV(input) {
+
+            input.value = input.value.replace(/\D/g, "").substring(0, 3);
+            const isValid = input.value.length === 3;
+            toggleValidClass(input, isValid);
+            return isValid;
+         }
+
+         function checkFormValidity() {
+            const cardValid = validateCardNumber(numberCard);
+            const dateValid = validateValidUntil(validUntil);
+            const cvvValid = validateCVV(cvv);
+            const isValid = cardValid && dateValid && cvvValid;
+            submitButton.disabled = !isValid;
+         }
+
+         function clearPaymentFields() {
+
+            numberCard.value = "";
+            validUntil.value = "";
+            cvv.value = "";
+
+            numberCard.parentNode.classList.remove("is-valid");
+            validUntil.parentNode.classList.remove("is-valid");
+            cvv.parentNode.classList.remove("is-valid");
+         }
+
+         numberCard.addEventListener("input", checkFormValidity);
+         validUntil.addEventListener("input", checkFormValidity);
+         cvv.addEventListener("input", checkFormValidity);
+
+         paymentGoogle.addEventListener("click", () => {
+
+            paymentColumnBlockCard.classList.remove("show");
+
+            clearPaymentFields();
+
+            submitButton.disabled = false;
+         });
+
+         paymentApple.addEventListener("click", () => {
+
+            paymentColumnBlockCard.classList.remove("show");
+
+            clearPaymentFields();
+
+            submitButton.disabled = false;
+         });
+
+         paymentCard.addEventListener("click", () => {
+
+            paymentColumnBlockCard.classList.add("show");
+
+            checkFormValidity();
+         });
+
+         checkFormValidity();
+      });
+   </script>
+   
 </body>
 </html>
