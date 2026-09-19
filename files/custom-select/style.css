@@ -1,12 +1,12 @@
 .select {
 	display: table;
-	color: #3F3D3D;
+	color: #20201E;
 	position: relative;
 	width: 140px;
 }
 .select__header {
 	align-items: center;
-	border: 1px solid #656363;
+	border: 1px solid #838382;
 	border-radius: 9px;
 	cursor: pointer;
 	display: flex;
@@ -19,10 +19,10 @@
 	border-radius: 9px 9px 0 0;
 }
 .select__current {
-	font-family: "Montserrat", sans-serif;
+	color: #20201E;
 	font-size: 12px;
-	font-weight: 500;
-	line-height: 26px;
+	font-weight: 400;
+	line-height: 14px;
 }
 .select__icon {
 	align-items: center;
@@ -30,6 +30,7 @@
 	flex-shrink: 0;
 	justify-content: center;
 	height: 20px;
+	margin-left: 14px;
 	text-align: center;
 	width: 20px;
 }
@@ -66,11 +67,12 @@
 
 .select__item.current,
 .select__item:hover {
-	background-color: #EFFAF5;
+	background-color: #DFFBDA;
 }
 
 .select__item.current::after {
 	content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0_4361_23141)'%3e%3cpath d='M5 11.0859L7.78906 13.875L14.1641 7.5' stroke='%233F3D3D' stroke-width='1.275' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_4361_23141'%3e%3crect width='20' height='20' fill='white' transform='translate(0 0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+	margin-left: 8px;
 	position: absolute;
 	top: 4px;
 }
