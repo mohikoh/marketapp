@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20260919220406" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20260919220406" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260919220406">
+   <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260919220406">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260919220406">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260919220406">
+   <link rel="stylesheet" href="files/custom-select/style.css?_v=20260919220406">
+   <title>Чат - MarketApp</title>
+</head>
+
+<body>
+	<div class="wrapper">
+				<header class="header bg-color lock-padding">
+			<div class="n_container">
+				<div class="header__left">
+					<a href="/">
+						<img src="images/svg/logo-new.svg" alt="">
+					</a>
+				</div>
+				<div class="header__right">
+					<div class="header__categories-select">
+						<p class="header__categories-select-current">Категоріі</p>
+						<img class="categories-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="blockCalegoriesLinks">
+							<ul>
+								<li><a href="#">Дитячий світ</a></li>
+								<li><a href="#">Запчастини</a></li>
+								<li><a href="#">Дім і сад</a></li>
+								<li><a href="#">Хобі, відпочинок і спорт</a></li>
+								<li><a href="#">До речі, відомі речі</a></li>
+								<li><a href="#">Товари для геймерів</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Нерухомість</a></li>
+								<li><a href="#">Робота</a></li>
+								<li><a href="#">Електроніка</a></li>
+								<li><a href="#">Мода і стиль</a></li>
+								<li><a href="#">Віддам безкоштовно</a></li>
+								<li><a href="#">Товари для школи</a></li>
+								<li><a href="#">Запчастини: старт бізнесу</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Авто</a></li>
+								<li><a href="#">Тварини</a></li>
+								<li><a href="#">Бізнес та послуги</a></li>
+								<li><a href="#">Оренда та прокат</a></li>
+								<li><a href="#">Обмін</a></li>
+								<li><a href="#">Медицина/фармацевтика</a></li>
+								<li><a href="#">Мігрувати запчастини?</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="/agrotook/favorite.html" class="header__icon-favorites">
+						<img src="images/svg/favorite-new.svg" alt="">
+					</a>
+					<a href="chat.html" class="header__icon-message">
+						<img src="images/svg/message-new.svg" alt="">
+					</a>
+					<div class="header__lang-select">
+						<div class="header__lang-select-current-icon">
+							<img src="images/svg/language-icons/flag-ua.svg" alt="uk">
+						</div>
+						<img class="lang-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="block-langs">
+                     <div class="header__lang-content">
+                        <!--<p>Select a language:</p>-->
+                        <ul>
+                           <!-- class: current-lang -->
+                           <li class="current-lang">
+                              <a href="#"><img src="images/svg/language-icons/flag-ua.svg" alt="UA"></a>
+                           </li>
+									<li>
+                              <a href="#"><img src="images/svg/language-icons/flag-gb.svg" alt="GB"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-de.svg" alt="DE"></a>
+                           </li>
+									<!--
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-al.svg" alt="AL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-am.svg" alt="AM"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ee.svg" alt="EE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-by.svg" alt="BY"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-bg.svg" alt="BG"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ba.svg" alt="BA"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-is.svg" alt="IS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hu.svg" alt="HU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-gr.svg" alt="GR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-dk.svg" alt="DK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-it.svg" alt="IT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-nl.svg" alt="NL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-no.svg" alt="NO"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pl.svg" alt="PL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pt.svg" alt="PT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-md.svg" alt="MD"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ru.svg" alt="RU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-sk.svg" alt="SK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-cz.svg" alt="CZ"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-rs.svg" alt="RS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-si.svg" alt="SI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fr.svg" alt="FR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fi.svg" alt="FI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-se.svg" alt="SE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hr.svg" alt="HR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-tr.svg" alt="TR"></a>
+                           </li>
+									-->
+                        </ul>
+                     </div>
+						</div>
+					</div>
+					<div class="header__blockProfile">
+						<div class="wrap-photo open-list-user">
+							<img src="images/user.jpg" alt="">
+						</div>
+						<a class="open-list-user" href="#">Ваш профіль</a>
+						<div class="header__blockProfileLinks">
+							<ul>
+								<li><a href="#">Особистий кабінет</a></li>
+								<li><a href="#">Налаштування профілю</a></li>
+								<li><a href="#">Сповіщення</a></li>
+								<li><a href="#">Особисті повідомлення</a></li>
+								<li><a href="#">Розмістити оголошення</a></li>
+								<li><a href="/">Вийти</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="create-add.html" class="header__button">Створити оголошення</a>
+				</div>
+			</div>
+		</header>
+		<main class="main chat">
+         <div class="n_container">
+
+				<!-- Messages -->
+
+            <div class="chat__items">
+               <div class="chat__item">
+                  <aside class="chat__aside">
+                     <div class="chat__asideHead">
+                        <div class="wrap-saved">
+                           <a href="#">
+                              <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M10 0H1.66667C0.75 0 0 0.75 0 1.66667V15L5.83333 12.5L11.6667 15V1.66667C11.6667 0.75 10.9167 0 10 0ZM10 12.5L5.83333 10.6833L1.66667 12.5V1.66667H10V12.5Z" fill="#323232"/>
+                              </svg>
+                              Збережені
+                           </a>
+                        </div>
+                        <div class="wrap-deleted">
+                           <a href="#" class="active">
+                              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M14.6167 1.85833L13.4583 0.458333C13.2333 0.175 12.8917 0 12.5 0H2.5C2.10833 0 1.76667 0.175 1.53333 0.458333L0.383333 1.85833C0.141667 2.14167 0 2.51667 0 2.91667V13.3333C0 14.25 0.75 15 1.66667 15H13.3333C14.25 15 15 14.25 15 13.3333V2.91667C15 2.51667 14.8583 2.14167 14.6167 1.85833ZM2.7 1.66667H12.3L12.975 2.475H2.03333L2.7 1.66667ZM1.66667 13.3333V4.16667H13.3333V13.3333H1.66667ZM8.70833 5.83333H6.29167V8.33333H4.16667L7.5 11.6667L10.8333 8.33333H8.70833V5.83333Z" fill="#323232"/>
+                              </svg>
+                              Архівовані
+                           </a>
+                        </div>
+                     </div>
+                     <div class="max-height-container">
+                        <div class="chat__asideButtons">
+                           <button data-chat-tab="buying" type="button" class="chat__asideButton action">Купівля</button>
+                           <button data-chat-tab="sale" type="button" class="chat__asideButton">Продаж</button>
+                        </div>
+                        <div data-chat-tabcontent="buying" class="chat__list-contacts list-contacts-active">
+                           <form action="#" class="chat__search-for-users-form">
+                              <input type="text" class="chat__search-for-users-form-field">
+                              <button type="submit" class="chat__search-for-users-form-submit">
+                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.16675 16.666C13.3089 16.666 16.6667 13.3082 16.6667 9.16602C16.6667 5.02388 13.3089 1.66602 9.16675 1.66602C5.02461 1.66602 1.66675 5.02388 1.66675 9.16602C1.66675 13.3082 5.02461 16.666 9.16675 16.666Z" stroke="#838382" stroke-width="1.41417"/>
+                                    <path d="M14.5065 14.5059L18.3335 18.3332" stroke="#838382" stroke-width="1.41417"/>
+                                 </svg>
+                              </button>
+                           </form>
+
+                           <!--
+                           <div class="chat__block--no-messages">
+                              <div class="chat__block--no-messages-wrap-image">
+                                 <img src="images/cath-no-messages.png" alt="">
+                              </div>
+                              <h2>Ваші чати відображатимуться тут!</h2>
+                              <p>Ваш список чатів відображатиметься тут, коли ви почнете спілкуватися з продавцями чи покупцями. Спочатку напишіть або зачекайте на відповіді на ваші оголошення — і починайте нові розмови!</p>
+                           </div>
+                           -->
+                           
+                           <div class="chat__uread-users">
+                              <p class="chat__uread-users-label">Unread</p>
+                              <div class="chat__user">
+                                 <div data-tab="melisa-döngel" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/chat-user-1.jpg" alt="Melisa Döngel">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Melisa Döngel</h5>
+                                       <p class="chat__user-preview-text">Hello. I hope everything goo...</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">11:40</p>
+                                       <span class="chat__user-number-of-sms">4</span>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="melisa-döngel" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                              <div class="chat__user">
+                                 <div data-tab="andriy-long" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/chat-user-2.jpg" alt="Andriy Long Nickname">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Andriy Long Nickname</h5>
+                                       <p class="chat__user-preview-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, laboriosam? Blanditiis, quas, ratione ut iste veritatis sit, aperiam tempora numquam quaerat animi molestias consectetur!</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">11:40</p>
+                                       <span class="chat__user-number-of-sms">5</span>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="andriy-long" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="chat__uread-users">
+                              <p class="chat__uread-users-label">Read</p>
+                              <div class="chat__user">
+                                 <div data-tab="andriy-long" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/chat-user-2.jpg" alt="Andriy Long Nickname">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Andriy Long Nickname</h5>
+                                       <p class="chat__user-preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio debitis nemo dolorem quas ad!</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">Wed</p>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="andriy-long" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                              <div class="chat__user">
+                                 <div data-tab="user-01" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/chat-user-3.jpg" alt="Andriy Long Nickname">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Andriy Long Nickname</h5>
+                                       <p class="chat__user-preview-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, provident aperiam.</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">11.04</p>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="user-01" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                              <div class="chat__user">
+                                 <div data-tab="user-02" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/preview-photo.jpg" alt="Mindy Crawford">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Mindy Crawford</h5>
+                                       <p class="chat__user-preview-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, provident aperiam.</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">11.04</p>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="user-02" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                              <div class="chat__user">
+                                 <div data-tab="user-04" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/chat-user-4.jpg" alt="Andriy Long Nickname">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Andriy Long Nickname</h5>
+                                       <p class="chat__user-preview-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam similique qui sapiente quidem recusandae quia placeat alias!</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">Wed</p>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="user-04" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                              <div class="chat__user">
+                                 <div data-tab="user-04" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/chat-user-4.jpg" alt="Andriy Long">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Andriy Long</h5>
+                                       <p class="chat__user-preview-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates commodi molestias, sit, debitis placeat porro quidem quasi recusandae odio officiis odit ad.</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">11.04</p>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="user-04" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div data-chat-tabcontent="sale" class="chat__list-contacts">
+                           <form action="#" class="chat__search-for-users-form">
+                              <input type="text" class="chat__search-for-users-form-field">
+                              <button type="submit" class="chat__search-for-users-form-submit">
+                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.16675 16.666C13.3089 16.666 16.6667 13.3082 16.6667 9.16602C16.6667 5.02388 13.3089 1.66602 9.16675 1.66602C5.02461 1.66602 1.66675 5.02388 1.66675 9.16602C1.66675 13.3082 5.02461 16.666 9.16675 16.666Z" stroke="#838382" stroke-width="1.41417"/>
+                                    <path d="M14.5065 14.5059L18.3335 18.3332" stroke="#838382" stroke-width="1.41417"/>
+                                 </svg>
+                              </button>
+                           </form>
+
+                           <div class="chat__uread-users">
+                              <p class="chat__uread-users-label">Unread</p>
+                              <div class="chat__user">
+                                 <div data-tab="melisa-döngel" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/chat-user-1.jpg" alt="Andriy Long Nickname">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Andriy Long Nickname</h5>
+                                       <p class="chat__user-preview-text">Hello. I hope everything goo...</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">11:40</p>
+                                       <span class="chat__user-number-of-sms">4</span>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="melisa-döngel" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                              <div class="chat__user">
+                                 <div data-tab="user-04" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/chat-user-4.jpg" alt="Andriy Long Nickname">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Andriy Long Nickname</h5>
+                                       <p class="chat__user-preview-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates commodi molestias, sit, debitis placeat porro quidem quasi recusandae odio officiis odit ad.</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">11.04</p>
+                                       <span class="chat__user-number-of-sms">19</span>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="user-04" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                              <div class="chat__user">
+                                 <div data-tab="andriy-long" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/chat-user-2.jpg" alt="Andriy Long Nickname">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Andriy Long Nickname</h5>
+                                       <p class="chat__user-preview-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, laboriosam? Blanditiis, quas, ratione ut iste veritatis sit, aperiam tempora numquam quaerat animi molestias consectetur!</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">11:40</p>
+                                       <span class="chat__user-number-of-sms">4</span>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="andriy-long" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="chat__uread-users">
+                              <p class="chat__uread-users-label">Read</p>
+                              <div class="chat__user">
+                                 <div data-tab="andriy-long" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/chat-user-2.jpg" alt="Andriy Long Nickname">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Andriy Long Nickname</h5>
+                                       <p class="chat__user-preview-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio debitis nemo dolorem quas ad!</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">Wed</p>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="andriy-long" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                              <div class="chat__user">
+                                 <div data-tab="user-01" class="chat__user-wrap-content">
+                                    <div class="wrap-photo">
+                                       <img src="images/chat-user-3.jpg" alt="Andriy Long Nickname">
+                                    </div>
+                                    <div class="wrap-info">
+                                       <h5 class="chat__user-name">Andriy Long Nickname</h5>
+                                       <p class="chat__user-preview-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, provident aperiam.</p>
+                                    </div>
+                                    <div class="wrap-right">
+                                       <p class="chat__user-time">11.04</p>
+                                    </div>
+                                 </div>
+                                 <ul class="chat__user-list-block">
+                                    <li data-tab="user-01" class="show-messages"></a><a href="#">Show messages</a> <img src="images/svg/message-ad.svg" alt=""></li>
+                                    <li><a href="#" class="delete-chat">Restore chat</a> <img src="images/svg/user-list-restore-chat-icon.svg" alt=""></li>
+                                    <li><a href="#" class="saved-chat">Saved chat</a> <img src="images/svg/user-list-saved-chat-icon.svg" alt=""></li>
+                                 </ul>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </aside>
+               </div>
+               <div class="chat__item">
+                  <div class="chat__wrap-message no-chat-selected">
+                     <p>Виберіть діалогове вікно, щоб розпочати розмову</p>
+                  </div>
+                  <div data-tabcontent="melisa-döngel" class="chat__wrap-message">
+                     <div class="chat__wrap-message-header">
+                        <button type="button" class="chat__wrap-message-close"><svg fill="none" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h48v48h-48z" fill="#fff" fill-opacity=".01"/><g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m5.79891 24h35.99999"/><path d="m17.7988 36-11.99997-12 11.99997-12"/></g></svg></button>
+                        <div class="wrap-image">
+                           <img src="images/chat-user-1.jpg" alt="Melisa Döngel">
+                        </div>
+                        <h3 class="chat__message-name">Melisa Döngel</h3>
+                        <div class="chat__wrap-message-headerWrapMenu">
+                           <button type="button"class="chat__wrap-message-headerMenuButton">
+                              <img src="images/svg/chat-wrap-message-menu-icon.svg" alt="">
+                           </button>
+                           <ul>
+                              <li><a href="#">Seller</a></li>
+                              <li class="leave-feedback">Leave feedback</li>
+                              <li><a href="#">Archive</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="chat__wrap-message-message">
+                        <div class="user-sms">
+                           <p class="user-sms-text">Hello!</p>
+                           <span class="user-sms-time">14:37</span>
+                        </div>
+                        <div class="user-sms">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Sagittis tempus egestas viverra at. Id montes laoreet pretium et. Ultricies.</p>
+                           <span class="user-sms-time">14:38</span>
+                        </div>
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Hello!</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#20201E"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Viverra tristique.</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#20201E"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+                        <div class="user-sms img">
+                           <img src="images/chat-img.jpg" alt="">
+                           <span class="user-sms-time">14:41</span>
+                        </div>
+
+                        <div class="chat__notification sent-for-review">
+                           <p>Ваш відгук надіслано на <br>перевірку</p>
+                        </div>
+
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Viverra tristique.</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#090909"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+
+                        <div class="chat__notification successfully-published">
+                           <p>Ваш відгук успішно <br>опубліковано!</p>
+                        </div>
+
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Viverra tristique.</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#090909"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+
+                        <div class="chat__notification review-rejected">
+                           <p>Ваш відгук відхилено <span>Причина: некоректне фото / ненормативна лексика / порушення правил</span></p>
+                        </div>
+
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Viverra tristique.</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#090909"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+
+                        <div class="chat__notification something-went-wrong">
+                           <p>Щось пішло не так. <span>Спробуйте ще раз або зв'яжіться з підтримкою</span></p>
+                        </div>
+
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Viverra tristique.</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#090909"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+
+                        <div class="chat__notification chat-ended">
+                           <p>Чат завершено</p>
+                        </div>
+
+                     </div>
+                     <div class="chat__wrap-message-footer">
+                        <div class="wrap-select-file">
+                           <img src="images/svg/attach-file.svg" alt="">
+                           <input type="file" title="">
+                        </div>
+                        <input class="chat__message-field" type="text" placeholder="Type a message">
+                        <button type="button" class="send-sms">
+                           <img src="images/svg/send-sms.svg" alt="">
+                        </button>
+                        <button type="button" class="write-down">
+                           <img src="images/svg/chat-mic.svg" alt="">
+                        </button>
+                     </div>
+                  </div>
+                  <div data-tabcontent="andriy-long" class="chat__wrap-message">
+                     <div class="chat__wrap-message-header">
+                        <button type="button" class="chat__wrap-message-close"><svg fill="none" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h48v48h-48z" fill="#fff" fill-opacity=".01"/><g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m5.79891 24h35.99999"/><path d="m17.7988 36-11.99997-12 11.99997-12"/></g></svg></button>
+                        <div class="wrap-image">
+                           <img src="images/chat-user-2.jpg" alt="Andriy Long Nickname">
+                        </div>
+                        <h3 class="chat__message-name">Andriy Long Nickname</h3>
+                        <div class="chat__wrap-message-headerWrapMenu">
+                           <button type="button"class="chat__wrap-message-headerMenuButton">
+                              <img src="images/svg/chat-wrap-message-menu-icon.svg" alt="">
+                           </button>
+                           <ul>
+                              <li><a href="#">Seller</a></li>
+                              <li class="leave-feedback">Leave feedback</li>
+                              <li><a href="#">Archive</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="chat__wrap-message-message">
+                        <div class="user-sms">
+                           <p class="user-sms-text">Hello!</p>
+                           <span class="user-sms-time">14:37</span>
+                        </div>
+                        <div class="user-sms">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Sagittis tempus egestas viverra at. Id montes laoreet pretium et. Ultricies.</p>
+                           <span class="user-sms-time">14:38</span>
+                        </div>
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Hello!</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#090909"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Viverra tristique.</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#090909"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+                     </div>
+                     <div class="chat__wrap-message-footer">
+                        <div class="wrap-select-file">
+                           <img src="images/svg/attach-file.svg" alt="">
+                           <input type="file" title="">
+                        </div>
+                        <input class="chat__message-field" type="text" placeholder="Type a message">
+                        <button type="button" class="send-sms">
+                           <img src="images/svg/send-sms.svg" alt="">
+                        </button>
+                        <button type="button" class="write-down">
+                           <img src="images/svg/chat-mic.svg" alt="">
+                        </button>
+                     </div>
+                  </div>
+                  <div data-tabcontent="user-01" class="chat__wrap-message">
+                     <div class="chat__wrap-message-header">
+                        <button type="button" class="chat__wrap-message-close"><svg fill="none" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h48v48h-48z" fill="#fff" fill-opacity=".01"/><g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m5.79891 24h35.99999"/><path d="m17.7988 36-11.99997-12 11.99997-12"/></g></svg></button>
+                        <div class="wrap-image">
+                           <img src="images/chat-user-3.jpg" alt="Andriy Long Nickname">
+                        </div>
+                        <h3 class="chat__message-name">Andriy Long Nickname</h3>
+                        <div class="chat__wrap-message-headerWrapMenu">
+                           <button type="button"class="chat__wrap-message-headerMenuButton">
+                              <img src="images/svg/chat-wrap-message-menu-icon.svg" alt="">
+                           </button>
+                           <ul>
+                              <li><a href="#">Seller</a></li>
+                              <li class="leave-feedback">Leave feedback</li>
+                              <li><a href="#">Archive</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="chat__wrap-message-message">
+                        <div class="user-sms">
+                           <p class="user-sms-text">Hello!</p>
+                           <span class="user-sms-time">14:37</span>
+                        </div>
+                        <div class="user-sms">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Sagittis tempus egestas viverra at. Id montes laoreet pretium et. Ultricies.</p>
+                           <span class="user-sms-time">14:38</span>
+                        </div>
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Viverra tristique.</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#090909"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+                     </div>
+                     <div class="chat__wrap-message-footer">
+                        <div class="wrap-select-file">
+                           <img src="images/svg/attach-file.svg" alt="">
+                           <input type="file" title="">
+                        </div>
+                        <input class="chat__message-field" type="text" placeholder="Type a message">
+                        <button type="button" class="send-sms">
+                           <img src="images/svg/send-sms.svg" alt="">
+                        </button>
+                        <button type="button" class="write-down">
+                           <img src="images/svg/chat-mic.svg" alt="">
+                        </button>
+                     </div>
+                  </div>
+                  <div data-tabcontent="user-02" class="chat__wrap-message">
+                     <div class="chat__wrap-message-header">
+                        <button type="button" class="chat__wrap-message-close"><svg fill="none" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h48v48h-48z" fill="#fff" fill-opacity=".01"/><g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m5.79891 24h35.99999"/><path d="m17.7988 36-11.99997-12 11.99997-12"/></g></svg></button>
+                        <div class="wrap-image">
+                           <img src="images/preview-photo.jpg" alt="Mindy Crawford">
+                        </div>
+                        <h3 class="chat__message-name">Mindy Crawford</h3>
+                        <div class="chat__wrap-message-headerWrapMenu">
+                           <button type="button"class="chat__wrap-message-headerMenuButton">
+                              <img src="images/svg/chat-wrap-message-menu-icon.svg" alt="">
+                           </button>
+                           <ul>
+                              <li><a href="#">Seller</a></li>
+                              <li class="leave-feedback">Leave feedback</li>
+                              <li><a href="#">Archive</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="chat__wrap-message-message">
+                        <div class="user-sms">
+                           <p class="user-sms-text">Hello!</p>
+                           <span class="user-sms-time">14:37</span>
+                        </div>
+                        <div class="user-sms">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Sagittis tempus egestas viverra at. Id montes laoreet pretium et. Ultricies.</p>
+                           <span class="user-sms-time">14:38</span>
+                        </div>
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Viverra tristique.</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#090909"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+                     </div>
+                     <div class="chat__wrap-message-footer">
+                        <div class="wrap-select-file">
+                           <img src="images/svg/attach-file.svg" alt="">
+                           <input type="file" title="">
+                        </div>
+                        <input class="chat__message-field" type="text" placeholder="Type a message">
+                        <button type="button" class="send-sms">
+                           <img src="images/svg/send-sms.svg" alt="">
+                        </button>
+                        <button type="button" class="write-down">
+                           <img src="images/svg/chat-mic.svg" alt="">
+                        </button>
+                     </div>
+                  </div>
+                  <div data-tabcontent="user-03" class="chat__wrap-message">
+                     <div class="chat__wrap-message-header">
+                        <button type="button" class="chat__wrap-message-close"><svg fill="none" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h48v48h-48z" fill="#fff" fill-opacity=".01"/><g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m5.79891 24h35.99999"/><path d="m17.7988 36-11.99997-12 11.99997-12"/></g></svg></button>
+                        <div class="wrap-image">
+                           <img src="images/preview-photo.jpg" alt="Mindy Crawford">
+                        </div>
+                        <h3 class="chat__message-name">Mindy Crawford</h3>
+                        <div class="chat__wrap-message-headerWrapMenu">
+                           <button type="button"class="chat__wrap-message-headerMenuButton">
+                              <img src="images/svg/chat-wrap-message-menu-icon.svg" alt="">
+                           </button>
+                           <ul>
+                              <li><a href="#">Seller</a></li>
+                              <li class="leave-feedback">Leave feedback</li>
+                              <li><a href="#">Archive</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="chat__wrap-message-message">
+                        <div class="user-sms">
+                           <p class="user-sms-text">Hello!</p>
+                           <span class="user-sms-time">14:37</span>
+                        </div>
+                        <div class="user-sms">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Sagittis tempus egestas viverra at. Id montes laoreet pretium et. Ultricies.</p>
+                           <span class="user-sms-time">14:38</span>
+                        </div>
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Viverra tristique.</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#090909"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+                     </div>
+                     <div class="chat__wrap-message-footer">
+                        <div class="wrap-select-file">
+                           <img src="images/svg/attach-file.svg" alt="">
+                           <input type="file" title="">
+                        </div>
+                        <input class="chat__message-field" type="text" placeholder="Type a message">
+                        <button type="button" class="send-sms">
+                           <img src="images/svg/send-sms.svg" alt="">
+                        </button>
+                        <button type="button" class="write-down">
+                           <img src="images/svg/chat-mic.svg" alt="">
+                        </button>
+                     </div>
+                  </div>
+                  <div data-tabcontent="user-04" class="chat__wrap-message">
+                     <div class="chat__wrap-message-header">
+                        <button type="button" class="chat__wrap-message-close"><svg fill="none" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h48v48h-48z" fill="#fff" fill-opacity=".01"/><g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m5.79891 24h35.99999"/><path d="m17.7988 36-11.99997-12 11.99997-12"/></g></svg></button>
+                        <div class="wrap-image">
+                           <img src="images/chat-user-4.jpg" alt="Andriy Long">
+                        </div>
+                        <h3 class="chat__message-name">Andriy Long</h3>
+                        <div class="chat__wrap-message-headerWrapMenu">
+                           <button type="button"class="chat__wrap-message-headerMenuButton">
+                              <img src="images/svg/chat-wrap-message-menu-icon.svg" alt="">
+                           </button>
+                           <ul>
+                              <li><a href="#">Seller</a></li>
+                              <li class="leave-feedback">Leave feedback</li>
+                              <li><a href="#">Archive</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="chat__wrap-message-message">
+                        <div class="user-sms">
+                           <p class="user-sms-text">Hello!</p>
+                           <span class="user-sms-time">14:37</span>
+                        </div>
+                        <div class="user-sms">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Sagittis tempus egestas viverra at. Id montes laoreet pretium et. Ultricies.</p>
+                           <span class="user-sms-time">14:38</span>
+                        </div>
+                        <div class="user-sms author">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur. Viverra tristique.</p>
+                           <span class="user-sms-time "><!-- green-svg -->
+                              14:40
+                              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5115 2.96526C11.7722 2.64339 11.7227 2.17111 11.4008 1.91039C11.0789 1.64968 10.6066 1.69925 10.3459 2.02112L4.38829 9.3761L1.95729 6.96111C1.66343 6.66919 1.18855 6.67075 0.896631 6.96461C0.604707 7.25847 0.606277 7.73335 0.900137 8.02527L3.92003 11.0253C4.07051 11.1748 4.27725 11.2535 4.48905 11.2421C4.70084 11.2307 4.8979 11.1301 5.0314 10.9653L11.5115 2.96526ZM16.4938 2.98631C16.7662 2.6742 16.7339 2.20042 16.4218 1.9281C16.1097 1.65577 15.6359 1.68803 15.3636 2.00014L8.90609 9.40117L8.45379 8.9577C8.15803 8.6677 7.68318 8.67238 7.39318 8.96814C7.10319 9.26391 7.10787 9.73876 7.40363 10.0288L8.42353 11.0288C8.57096 11.1733 8.77147 11.2507 8.97779 11.2427C9.18411 11.2346 9.37799 11.1419 9.51374 10.9863L16.4938 2.98631Z" fill="#090909"/>
+                                 </g>
+                              </svg>
+                           </span>
+                        </div>
+                        <div class="user-sms">
+                           <p class="user-sms-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque unde mollitia ipsum esse sint rem beatae magnam dignissimos, ad blanditiis eligendi iste qui facilis officiis quibusdam libero excepturi officia odio saepe ducimus nemo.</p>
+                           <span class="user-sms-time">14:44</span>
+                        </div>
+                     </div>
+                     <div class="chat__wrap-message-footer">
+                        <div class="wrap-select-file">
+                           <img src="images/svg/attach-file.svg" alt="">
+                           <input type="file" title="">
+                        </div>
+                        <input class="chat__message-field" type="text" placeholder="Type a message">
+                        <button type="button" class="send-sms">
+                           <img src="images/svg/send-sms.svg" alt="">
+                        </button>
+                        <button type="button" class="write-down">
+                           <img src="images/svg/chat-mic.svg" alt="">
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+				<!-- Messages -->
+
+         </div>
+      </main>
+		<footer class="footer">
+    <div class="n_container">
+        <div class="footer__columns">
+            <div class="footer__column footer-first-column">
+                <div class="footer__blockLogo">
+                    <img src="images/svg/footer-logo-new.svg" alt="MarketApp">
+                </div>
+                <div class="footer__appButtons">
+                    <a href="#">
+                        <img src="images/svg/footer-app-google-new.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/svg/footer-app-store-new.svg" alt="">
+                    </a>
+                </div>
+                <p class="footer-copyright">2026 MarketApp. Всі права захищені.</p>
+            </div>
+            <div data-da="footer-first-column, 1, 767" class="footer__column">
+                <div class="footer__columnBlock">
+                    <h3>Про нас</h3>
+                    <ul>
+                        <li><a href="#">Про MarketApp</a></li>
+                        <li><a href="#">Мобільний застосунок</a></li>
+                        <li><a href="#">Реклама</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock">
+                    <h3>Навігація</h3>
+                    <ul>
+                        <li><a href="#">Категорії</a></li>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Пошук</a></li>
+                        <li><a href="#">Повідомлення</a></li>
+                        <li><a href="#">Улюблене</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Новини</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock last">
+                    <h3>Допомога</h3>
+                    <ul>
+                        <li><a href="#">Public offer</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+      <div id="delete-chat" class="popup">
+         <div class="popup__body">
+            <div class="popup__content">
+               <!--<a href="" class="popup__close close-popup">X</a>-->
+         
+               <h2>Видалити чат</h2>
+               <p>Ви впевнені, що хочете видалити цей чат?</p>
+               <div class="popup__wrap-bottoms">
+                  <a href="" class="popup__close close-popup">Видалити</a>
+                  <a href="" class="popup__close close-popup">Скасувати</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="popup popup-chat"><!-- open -->
+         <div class="popup__body">
+            <div class="popup__content">
+               <a href="" class="popup__close close-popup">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M17.19 0.403334C16.67 -0.116666 15.83 -0.116666 15.31 0.403334L8.79 6.91L2.27 0.39C1.75 -0.13 0.91 -0.13 0.39 0.39C-0.13 0.91 -0.13 1.75 0.39 2.27L6.91 8.79L0.39 15.31C-0.13 15.83 -0.13 16.67 0.39 17.19C0.91 17.71 1.75 17.71 2.27 17.19L8.79 10.67L15.31 17.19C15.83 17.71 16.67 17.71 17.19 17.19C17.71 16.67 17.71 15.83 17.19 15.31L10.67 8.79L17.19 2.27C17.6967 1.76333 17.6967 0.91 17.19 0.403334V0.403334Z" fill="#838382"/>
+                  </svg>
+               </a>
+               <div class="popup-chat__blockIllustration">
+                  <img src="images/popup-chat-review-verification-new.png" alt="">
+               </div>
+               <p>Ваш відгук успішно надіслано на перевірку. Ви можете відстежувати його статус у чаті — він оновиться після перевірки.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="popup popup-chat-slider-images"><!-- open -->
+         <div class="popup__body">
+            <div class="popup__content">
+               <a href="" class="popup__close close-popup">
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M25.4752 7.13477L7.13281 25.4772" stroke="black" stroke-width="2.03804" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M25.4752 25.4772L7.13281 7.13477" stroke="black" stroke-width="2.03804" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+               </a>
+               
+               <div class="popup-wrap-slider">
+                  <div id="big-slider" class="swiper big-slider">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <img src="images/popup-chat-slider-image-1.png">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/popup-chat-slider-image-2.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/popup-chat-slider-image-1.png">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/popup-chat-slider-image-2.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/popup-chat-slider-image-1.png">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/popup-chat-slider-image-2.jpg">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="wrap-slider-gallery">
+                     <div id="slider-gallery" class="swiper slider-gallery">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <img src="images/popup-chat-slider-image-1.png">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/popup-chat-slider-image-2.jpg">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/popup-chat-slider-image-1.png">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/popup-chat-slider-image-2.jpg">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/popup-chat-slider-image-1.png">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/popup-chat-slider-image-2.jpg">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="custom-gallery-btn swiper-button-prev">
+                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M7.89791e-05 4.02437L3.44129 -2.01402e-07L3.92948 0.570922L1.31155 3.63249L8.04883 3.63249L8.04883 4.41626L1.31155 4.41626L3.92947 7.47783L3.44128 8.04875L7.89791e-05 4.02437Z" fill="white"/>
+                        </svg>
+                     </div>
+                     <div class="custom-gallery-btn swiper-button-next">
+                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M8.04875 4.02445L4.60754 8.04883L4.11935 7.47791L6.73728 4.41633L-1.58781e-07 4.41633L-1.93041e-07 3.63257L6.73728 3.63257L4.11935 0.571L4.60754 7.89536e-05L8.04875 4.02445Z" fill="white"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+	</div>
+	
+   <script src="js/script.min.js?_v=20260919220406"></script>
+
+	<script src="files/swiper/js/swiper-bundle.min.js?_v=20260919220406"></script>
+   <script src="files/swiper/js/init.js?_v=20260919220406"></script>
+
+   <script src="files/js/chat.js?_v=20260919220406"></script>
+	
+</body>
+</html>

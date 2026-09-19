@@ -6,14 +6,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20260917235315" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20260917235315" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.min.css?_v=20260917235315">
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20260919220406" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20260919220406" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260919220406">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260917235315">
-   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260917235315">
-   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260917235315">
-   <link rel="stylesheet" href="files/custom-select/style.css?_v=20260917235315">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260919220406">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260919220406">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260919220406">
+   <link rel="stylesheet" href="files/custom-select/style.css?_v=20260919220406">
    <title>Оплата - MarketApp</title>
 </head>
 
@@ -290,15 +290,21 @@
                         <div class="payment__columnBlockCard">
                            <h4>Надайте платіжну інформацію</h4>
                            <label for="number-card">Номер платіжної картки</label>
-                           <input type="text" id="number-card">
+                           <div class="wrap-field">
+                              <input type="text" id="number-card">
+                           </div>
                            <div class="wrap-two-fields">
                               <div class="wrap-two-field">
                                  <label for="valid-until">Дійсно до</label>
-                                 <input type="text" id="valid-until">
+                                 <div class="wrap-field">
+                                    <input type="text" id="valid-until">
+                                 </div>
                               </div>
                               <div class="wrap-two-field">
                                  <label for="cvv">СVV</label>
-                                 <input type="text" id="cvv">
+                                 <div class="wrap-field">
+                                    <input type="text" id="cvv">
+                                 </div>
                               </div>
                            </div>
                            <label class="label-checkbox"><input type="checkbox"> Збережіть дані для наступного платежу</label>
@@ -317,11 +323,45 @@
                         </div>
                         <div class="payment__columnWidget widget-promo-code "><!-- invalid-promo-code -->
                            <p>Додати промокод</p>
-                           <div class="wrap-field">
-                              <input type="text">
-                              <button type="button">Застосувати</button>
+                           <div class="payment__columnWidget--block-promo-code "><!-- promo-code-accepted -->
+                              <div class="wrap-field">
+                                 <input type="text">
+                                 <button type="button">Застосувати</button>
+                              </div>
+                              <p class="invalid-promo-code">Перевірте правильність промокоду і спробуйте ще раз</p>
+                              <div class="wrap-info-promo-code">
+                                 <p>Код, що застосовується: MARKETAPP <span>-5.00 EUR</span></p>
+                                 <div class="label-promo-code">
+                                    <span class="wrap-icon">
+                                       <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <g clip-path="url(#clip0_40000030_206289)">
+                                             <path d="M6.375 3.71875V13.2812" stroke="#1B5D14" stroke-width="1.0625" stroke-linecap="round" stroke-linejoin="round"/>
+                                             <path d="M1.59375 10.625C2.15734 10.625 2.69784 10.4011 3.09635 10.0026C3.49487 9.60409 3.71875 9.06359 3.71875 8.5C3.71875 7.93641 3.49487 7.39591 3.09635 6.9974C2.69784 6.59888 2.15734 6.375 1.59375 6.375V4.25C1.59375 4.1091 1.64972 3.97398 1.74935 3.87435C1.84898 3.77472 1.9841 3.71875 2.125 3.71875H14.875C15.0159 3.71875 15.151 3.77472 15.2507 3.87435C15.3503 3.97398 15.4062 4.1091 15.4062 4.25V6.375C14.8427 6.375 14.3022 6.59888 13.9036 6.9974C13.5051 7.39591 13.2812 7.93641 13.2812 8.5C13.2812 9.06359 13.5051 9.60409 13.9036 10.0026C14.3022 10.4011 14.8427 10.625 15.4062 10.625V12.75C15.4062 12.8909 15.3503 13.026 15.2507 13.1257C15.151 13.2253 15.0159 13.2812 14.875 13.2812H2.125C1.9841 13.2812 1.84898 13.2253 1.74935 13.1257C1.64972 13.026 1.59375 12.8909 1.59375 12.75V10.625Z" stroke="#1B5D14" stroke-width="1.0625" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </g>
+                                          <defs>
+                                             <clipPath id="clip0_40000030_206289">
+                                                <rect width="17" height="17" fill="white"/>
+                                             </clipPath>
+                                          </defs>
+                                       </svg>
+                                    </span>
+                                    MARKETAPP 
+                                    <button type="button" class="remove-promo-code-btn" id="remove-promo-code">
+                                       <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <g clip-path="url(#clip0_40000030_206294)">
+                                             <path d="M13.2812 3.71875L3.71875 13.2812" stroke="#1B5D14" stroke-width="1.0625" stroke-linecap="round" stroke-linejoin="round"/>
+                                             <path d="M13.2812 13.2812L3.71875 3.71875" stroke="#1B5D14" stroke-width="1.0625" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </g>
+                                          <defs>
+                                             <clipPath id="clip0_40000030_206294">
+                                                <rect width="17" height="17" fill="white"/>
+                                             </clipPath>
+                                          </defs>
+                                       </svg>
+                                    </button>
+                                 </div>
+                              </div>
                            </div>
-                           <p class="invalid-promo-code">Перевірте правильність промокоду і спробуйте ще раз</p>
                         </div>
                         <div class="payment__columnWidget widget-buttons">
                            <p class="total-to-be-paid">Разом до оплати: <strong>50 EUR</strong></p>
@@ -390,8 +430,9 @@
 </footer>
    </div>
    
-   <script src="js/script.min.js?_v=20260917235315"></script>
+   <script src="js/script.min.js?_v=20260919220406"></script>
    <script>
+      /*
       document.addEventListener("DOMContentLoaded", function () {
          let wrapPaymentForm = document.querySelector('.js-wrap-payment-form');
          if (!wrapPaymentForm) return;
@@ -464,6 +505,100 @@
             checkFormValidity(); // Проверяем, нужно ли заблокировать кнопку
          }
       });
+      */
+   
+      document.addEventListener("DOMContentLoaded", function () {
+
+         // Форма с данными карты
+         const wrapPaymentForm = document.querySelector(".js-wrap-payment-form");
+         if (!wrapPaymentForm) {
+            return;
+         }
+         const paymentCard = document.getElementById("payment-card");
+         const paymentGoogle = document.getElementById("payment-google");
+         const paymentApple = document.getElementById("payment-apple");
+         const paymentColumnBlockCard = wrapPaymentForm.querySelector(".payment__columnBlockCard");
+         const numberCard = wrapPaymentForm.querySelector("#number-card");
+         const validUntil = wrapPaymentForm.querySelector("#valid-until");
+         const cvv = wrapPaymentForm.querySelector("#cvv");
+         const submitButton = wrapPaymentForm.querySelector('button[type="submit"]');
+         function toggleValidClass(input, isValid) {
+            input.parentNode.classList.toggle("is-valid", isValid);
+         }
+         function validateCardNumber(input) {
+            input.value = input.value.replace(/\D/g, "").substring(0, 16);
+            input.value = input.value.replace(/(\d{4})/g, "$1 ").trim();
+            const isValid = input.value.length === 19;
+            toggleValidClass(input, isValid);
+            return isValid;
+         }
+         function validateValidUntil(input) {
+            let value = input.value.replace(/\D/g, "").substring(0, 4);
+            if (value.length > 2) {
+               value = value.substring(0, 2) + "/" + value.substring(2);
+            }
+            input.value = value;
+            let isValid = false;
+            if (value.length === 5) {
+               const [month, year] = value.split("/").map(Number);
+               isValid = month >= 1 && month <= 12 && year >= 0 && year <= 99;
+            }
+            toggleValidClass(input, isValid);
+            return isValid;
+         }
+         function validateCVV(input) {
+            input.value = input.value.replace(/\D/g, "").substring(0, 3);
+            const isValid = input.value.length === 3;
+            toggleValidClass(input, isValid);
+            return isValid;
+         }
+         function checkFormValidity() {
+            const cardValid = validateCardNumber(numberCard);
+            const dateValid = validateValidUntil(validUntil);
+            const cvvValid = validateCVV(cvv);
+            const isValid = cardValid && dateValid && cvvValid;
+            submitButton.disabled = !isValid;
+         }
+         function clearPaymentFields() {
+            numberCard.value = "";
+            validUntil.value = "";
+            cvv.value = "";
+            numberCard.parentNode.classList.remove("is-valid");
+            validUntil.parentNode.classList.remove("is-valid");
+            cvv.parentNode.classList.remove("is-valid");
+         }
+         numberCard.addEventListener("input", checkFormValidity);
+         validUntil.addEventListener("input", checkFormValidity);
+         cvv.addEventListener("input", checkFormValidity);
+         paymentGoogle.addEventListener("click", () => {
+            paymentColumnBlockCard.classList.remove("show");
+            clearPaymentFields();
+            submitButton.disabled = false;
+         });
+         paymentApple.addEventListener("click", () => {
+            paymentColumnBlockCard.classList.remove("show");
+            clearPaymentFields();
+            submitButton.disabled = false;
+         });
+         paymentCard.addEventListener("click", () => {
+            paymentColumnBlockCard.classList.add("show");
+            checkFormValidity();
+         });
+         checkFormValidity();
+
+         // Удаление пром кода
+         const removePromoCodeBtn = document.getElementById('remove-promo-code');
+         if (removePromoCodeBtn) {
+            removePromoCodeBtn.addEventListener('click', function () {
+               const promoBlock = this.closest('.payment__columnWidget--block-promo-code');
+               const promoWidget = this.closest('.widget-promo-code');
+               promoBlock?.classList.remove('promo-code-accepted');
+               promoWidget?.classList.remove('invalid-promo-code');
+            });
+         }
+
+      });
+   
    </script>
    
 </body>

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20260919220406" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20260919220406" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260919220406">
+   <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260919220406">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260919220406">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260919220406">
+   <link rel="stylesheet" href="files/custom-select/style.css?_v=20260919220406">
+   <title>Створити оголошення - MarketApp</title>
+</head>
+
+<body>
+	<div class="wrapper">
+				<header class="header bg-color lock-padding">
+			<div class="n_container">
+				<div class="header__left">
+					<a href="/">
+						<img src="images/svg/logo-new.svg" alt="">
+					</a>
+				</div>
+				<div class="header__right">
+					<div class="header__categories-select">
+						<p class="header__categories-select-current">Категоріі</p>
+						<img class="categories-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="blockCalegoriesLinks">
+							<ul>
+								<li><a href="#">Дитячий світ</a></li>
+								<li><a href="#">Запчастини</a></li>
+								<li><a href="#">Дім і сад</a></li>
+								<li><a href="#">Хобі, відпочинок і спорт</a></li>
+								<li><a href="#">До речі, відомі речі</a></li>
+								<li><a href="#">Товари для геймерів</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Нерухомість</a></li>
+								<li><a href="#">Робота</a></li>
+								<li><a href="#">Електроніка</a></li>
+								<li><a href="#">Мода і стиль</a></li>
+								<li><a href="#">Віддам безкоштовно</a></li>
+								<li><a href="#">Товари для школи</a></li>
+								<li><a href="#">Запчастини: старт бізнесу</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Авто</a></li>
+								<li><a href="#">Тварини</a></li>
+								<li><a href="#">Бізнес та послуги</a></li>
+								<li><a href="#">Оренда та прокат</a></li>
+								<li><a href="#">Обмін</a></li>
+								<li><a href="#">Медицина/фармацевтика</a></li>
+								<li><a href="#">Мігрувати запчастини?</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="/agrotook/favorite.html" class="header__icon-favorites">
+						<img src="images/svg/favorite-new.svg" alt="">
+					</a>
+					<a href="chat.html" class="header__icon-message">
+						<img src="images/svg/message-new.svg" alt="">
+					</a>
+					<div class="header__lang-select">
+						<div class="header__lang-select-current-icon">
+							<img src="images/svg/language-icons/flag-ua.svg" alt="uk">
+						</div>
+						<img class="lang-arrow" src="images/svg/language-icons/arrow.svg" alt="">
+						<div class="block-langs">
+                     <div class="header__lang-content">
+                        <!--<p>Select a language:</p>-->
+                        <ul>
+                           <!-- class: current-lang -->
+                           <li class="current-lang">
+                              <a href="#"><img src="images/svg/language-icons/flag-ua.svg" alt="UA"></a>
+                           </li>
+									<li>
+                              <a href="#"><img src="images/svg/language-icons/flag-gb.svg" alt="GB"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-de.svg" alt="DE"></a>
+                           </li>
+									<!--
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-al.svg" alt="AL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-am.svg" alt="AM"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ee.svg" alt="EE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-by.svg" alt="BY"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-bg.svg" alt="BG"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ba.svg" alt="BA"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-is.svg" alt="IS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hu.svg" alt="HU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-gr.svg" alt="GR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-dk.svg" alt="DK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-it.svg" alt="IT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-nl.svg" alt="NL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-no.svg" alt="NO"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pl.svg" alt="PL"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-pt.svg" alt="PT"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-md.svg" alt="MD"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-ru.svg" alt="RU"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-sk.svg" alt="SK"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-cz.svg" alt="CZ"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-rs.svg" alt="RS"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-si.svg" alt="SI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fr.svg" alt="FR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-fi.svg" alt="FI"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-se.svg" alt="SE"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-es.svg" alt="ES"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-hr.svg" alt="HR"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="images/svg/language-icons/flag-tr.svg" alt="TR"></a>
+                           </li>
+									-->
+                        </ul>
+                     </div>
+						</div>
+					</div>
+					<div class="header__blockProfile">
+						<div class="wrap-photo open-list-user">
+							<img src="images/user.jpg" alt="">
+						</div>
+						<a class="open-list-user" href="#">Ваш профіль</a>
+						<div class="header__blockProfileLinks">
+							<ul>
+								<li><a href="#">Особистий кабінет</a></li>
+								<li><a href="#">Налаштування профілю</a></li>
+								<li><a href="#">Сповіщення</a></li>
+								<li><a href="#">Особисті повідомлення</a></li>
+								<li><a href="#">Розмістити оголошення</a></li>
+								<li><a href="/">Вийти</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="create-add.html" class="header__button">Створити оголошення</a>
+				</div>
+			</div>
+		</header>
+		<main class="main create-add">
+         <div class="n_container">
+				<div class="page__head there-is-a-button">
+					<h1>Створити оголошення</h1>
+               <button id="show-sidebar" type="button" class="favorite__btn-show-filter">
+                  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="m487.976 0h-463.948c-21.318 0-32.075 25.866-16.97 40.971l184.942 184.97v206.059c0 7.831 3.821 15.17 10.237 19.662l80 55.98c15.783 11.048 37.763-.149 37.763-19.662v-262.039l184.947-184.97c15.074-15.075 4.391-40.971-16.971-40.971z"/>
+                  </svg>
+               </button>
+				</div>
+
+				<!-- Create Add -->
+            <form action="#" class="create-add__form">
+               <div class="create-add__items">
+                  <div class="create-add__item">
+                     <aside id="sidebar-sort-by" class="sidebar-filters">
+                        
+                        <div class="block-sort-by">
+                           <input id="create-add-title" type="text" placeholder="Назва*" class="create-add__field">
+                           <div class="wrap-selects-form">
+                              <div class="wrap-select-form">
+                                 <input type="hidden" name="sidebar-filters-select-categories">
+                                 <select id="sidebar-filters-categories">
+                                    <option value="" selected disabled>Категорія*</option>
+                                    <option value="Усі категорії">Усі категорії</option>
+                                    <option value="Дитячий світ">Дитячий світ</option>
+                                    <option value="Нерухомість">Нерухомість</option>
+                                    <option value="Авто">Авто</option>
+                                    <option value="Запчастини">Запчастини</option>
+                                    <option value="Робота">Робота</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                    <option value="Тварини">Тварини</option>
+                                 </select>
+                              </div>
+                              <div class="wrap-select-form">
+                                 <input id="create-add-country" type="hidden" name="create-add-select-country">
+                                 <select id="sidebar-filters-country">
+                                    <option value="" selected disabled>Країна*</option>
+                                    <option value="Країна 1">Країна 1</option>
+                                    <option value="Країна 2">Країна 2</option>
+                                    <option value="Країна 3">Країна 3</option>
+                                    <option value="Країна 4">Країна 4</option>
+                                    <option value="Країна 5">Країна 5</option>
+                                 </select>
+                              </div>
+                              <div class="wrap-select-form">
+                                 <input type="hidden" name="sidebar-filters-select-city">
+                                 <select id="sidebar-filters-city">
+                                    <option value="" selected disabled>Місто*</option>
+                                    <option value="Місто 1">Місто 1</option>
+                                    <option value="Місто 2">Місто 2</option>
+                                    <option value="Місто 3">Місто 3</option>
+                                    <option value="Місто 4">Місто 4</option>
+                                    <option value="Місто 5">Місто 5</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <textarea id="create-add-description" name="create-add-description" placeholder="Опис*" class="create-add__field description"></textarea>
+
+                           <div class="block-sort-by__boxs">
+                              <div class="block-sort-by__box">
+                                 <label>Ціна</label>
+                                 <div class="sidebar-filters-btn">
+                                    <input type="radio" name="price" value="">
+                                    <span class="sidebar-filters-btn-checked">По домовленості</span>
+                                 </div>
+                                 <div class="sidebar-filters-btn">
+                                    <input type="radio" name="price" value="" data-toggle-target="price-checked">
+                                    <span class="sidebar-filters-btn-checked">Ціна</span>
+                                 </div>
+                                 <div class="block-sort-by__box--wrap-fields darker-color hidden" data-toggle-content="price-checked">
+                                    <input type="number" placeholder="Вкажіть суму">
+                                 </div>
+                                 <div class="sidebar-filters-wrap-btns three-btns">
+                                    <div class="sidebar-filters-btn">
+                                       <input type="radio" name="currency" value="₴">
+                                       <span class="sidebar-filters-btn-checked">₴</span>
+                                    </div>
+                                    <div class="sidebar-filters-btn">
+                                       <input type="radio" name="currency" value="$">
+                                       <span class="sidebar-filters-btn-checked">$</span>
+                                    </div>
+                                    <div class="sidebar-filters-btn">
+                                       <input type="radio" name="currency" value="€">
+                                       <span class="sidebar-filters-btn-checked">€</span>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="block-sort-by__box">
+                                 <label>Стан</label>
+                                 <div class="sidebar-filters-btn">
+                                    <input type="radio" name="state" value="">
+                                    <span class="sidebar-filters-btn-checked">Новий</span>
+                                 </div>
+                                 <div class="sidebar-filters-btn">
+                                    <input type="radio" name="state" value="">
+                                    <span class="sidebar-filters-btn-checked">Б/У</span>
+                                 </div>
+                              </div>
+
+                              <div class="block-sort-by__box">
+                                 <label>Доставка</label>
+                                 <div class="sidebar-filters-btn">
+                                    <input type="radio" name="delivery" value="">
+                                    <span class="sidebar-filters-btn-checked">Доставка</span>
+                                 </div>
+                                 <div class="sidebar-filters-btn">
+                                    <input type="radio" name="delivery" value="">
+                                    <span class="sidebar-filters-btn-checked">Самовивіз</span>
+                                 </div>
+                              </div>
+                           </div>
+                        
+                        </div>
+                        
+                     </aside>
+                  </div>
+                  <div class="create-add__item">
+                     <div class="create-add__content">
+                        <h2>Розмістіть оголошення про свій продукт тут!</h2>
+                        <div class="create-add__notifi-block ten-out-of-ten-published">
+                           <h3>Мій тариф «PRO» 10/10 щомісячних публікацій</h3>
+                        </div>
+                        <div class="create-add__notifi-block already-published">
+                           <h3>Вам доступне разове розміщення</h3>
+                        </div>
+                        <p>Ви шукаєте клієнтів? Тоді ви потрапили на адресу! Розкажіть нам про свій продукт, послугу або акцію та залучайте клієнтів швидко та легко. Зробіть свій продукт привабливим сьогодні!</p>
+                        
+                        <div id="create-add-wrap-photo" class="create-add__wrapPhoto "><!-- photo-selected -->
+                           <!--<img src="images/preview-photo.jpg" alt="">-->
+                           <svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="path-1-inside-1_40000025_199225" fill="white">
+                                 <path d="M0 44.5C0 19.9233 19.9233 0 44.5 0C69.0767 0 89 19.9233 89 44.5C89 69.0767 69.0767 89 44.5 89C19.9233 89 0 69.0767 0 44.5Z"/>
+                              </mask>
+                              <path d="M0 44.5M89 44.5M89 44.5M0 44.5M44.5 0M89 44.5M44.5 89M0 44.5M44.5 89V87C21.0279 87 2 67.9721 2 44.5H0H-2C-2 70.1812 18.8188 91 44.5 91V89ZM89 44.5H87C87 67.9721 67.9721 87 44.5 87V89V91C70.1812 91 91 70.1812 91 44.5H89ZM44.5 0V2C67.9721 2 87 21.0279 87 44.5H89H91C91 18.8188 70.1812 -2 44.5 -2V0ZM44.5 0V-2C18.8188 -2 -2 18.8188 -2 44.5H0H2C2 21.0279 21.0279 2 44.5 2V0Z" fill="#838382" mask="url(#path-1-inside-1_40000025_199225)"/>
+                              <g clip-path="url(#clip0_40000025_199225)">
+                                 <path d="M55.25 46.2923H46.2917V55.2507C46.2917 56.2361 45.4854 57.0423 44.5 57.0423C43.5146 57.0423 42.7083 56.2361 42.7083 55.2507V46.2923H33.75C32.7646 46.2923 31.9583 45.4861 31.9583 44.5007C31.9583 43.5152 32.7646 42.709 33.75 42.709H42.7083V33.7507C42.7083 32.7652 43.5146 31.959 44.5 31.959C45.4854 31.959 46.2917 32.7652 46.2917 33.7507V42.709H55.25C56.2354 42.709 57.0417 43.5152 57.0417 44.5007C57.0417 45.4861 56.2354 46.2923 55.25 46.2923Z" fill="#838382"/>
+                              </g>
+                              <defs>
+                                 <clipPath id="clip0_40000025_199225">
+                                    <rect width="43" height="43" fill="white" transform="translate(23 23)"/>
+                                 </clipPath>
+                              </defs>
+                           </svg>
+                           <input type="file" id="profile-photo" title="">
+                           <p>Додати фото</p>
+                        </div>
+                        <div class="create-add__additional-images">
+                           <div id="create-add-wrap-additional-photo-1" class="create-add__wrapPhoto "><!-- photo-selected -->
+                              <!--<img src="images/preview-slide-img-2.jpg" alt="">-->
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#838382"/>
+                                    <g clip-path="url(.clip0_40000030_199562)">
+                                    <path d="M22 17H17V22C17 22.55 16.55 23 16 23C15.45 23 15 22.55 15 22V17H10C9.45 17 9 16.55 9 16C9 15.45 9.45 15 10 15H15V10C15 9.45 15.45 9 16 9C16.55 9 17 9.45 17 10V15H22C22.55 15 23 15.45 23 16C23 16.55 22.55 17 22 17Z" fill="#838382"/>
+                                 </g>
+                                 <defs>
+                                    <clipPath class="clip0_40000030_199562">
+                                       <rect width="24" height="24" fill="white" transform="translate(4 4)"/>
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                              <button id="remove-photo-1" type="button" class="remove-photo">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.44625 0.15125C6.25125 -0.0437499 5.93625 -0.0437499 5.74125 0.15125L3.29625 2.59125L0.85125 0.14625C0.65625 -0.04875 0.34125 -0.04875 0.14625 0.14625C-0.04875 0.34125 -0.04875 0.65625 0.14625 0.85125L2.59125 3.29625L0.14625 5.74125C-0.04875 5.93625 -0.04875 6.25125 0.14625 6.44625C0.34125 6.64125 0.65625 6.64125 0.85125 6.44625L3.29625 4.00125L5.74125 6.44625C5.93625 6.64125 6.25125 6.64125 6.44625 6.44625C6.64125 6.25125 6.64125 5.93625 6.44625 5.74125L4.00125 3.29625L6.44625 0.85125C6.63625 0.66125 6.63625 0.34125 6.44625 0.15125V0.15125Z" fill="#20201E"/>
+                                 </svg>
+                              </button>
+                              <input type="file" id="profile-photo-additional-1" title="">
+                              <p>Додати фото</p>
+                           </div>
+                           <div id="create-add-wrap-additional-photo-2" class="create-add__wrapPhoto "><!-- photo-selected -->
+                              <!--<img src="images/preview-slide-img-2.jpg" alt="">-->
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#838382"/>
+                                    <g clip-path="url(.clip0_40000030_199562)">
+                                    <path d="M22 17H17V22C17 22.55 16.55 23 16 23C15.45 23 15 22.55 15 22V17H10C9.45 17 9 16.55 9 16C9 15.45 9.45 15 10 15H15V10C15 9.45 15.45 9 16 9C16.55 9 17 9.45 17 10V15H22C22.55 15 23 15.45 23 16C23 16.55 22.55 17 22 17Z" fill="#838382"/>
+                                 </g>
+                                 <defs>
+                                    <clipPath class="clip0_40000030_199562">
+                                       <rect width="24" height="24" fill="white" transform="translate(4 4)"/>
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                              <button id="remove-photo-2" type="button" class="remove-photo">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.44625 0.15125C6.25125 -0.0437499 5.93625 -0.0437499 5.74125 0.15125L3.29625 2.59125L0.85125 0.14625C0.65625 -0.04875 0.34125 -0.04875 0.14625 0.14625C-0.04875 0.34125 -0.04875 0.65625 0.14625 0.85125L2.59125 3.29625L0.14625 5.74125C-0.04875 5.93625 -0.04875 6.25125 0.14625 6.44625C0.34125 6.64125 0.65625 6.64125 0.85125 6.44625L3.29625 4.00125L5.74125 6.44625C5.93625 6.64125 6.25125 6.64125 6.44625 6.44625C6.64125 6.25125 6.64125 5.93625 6.44625 5.74125L4.00125 3.29625L6.44625 0.85125C6.63625 0.66125 6.63625 0.34125 6.44625 0.15125V0.15125Z" fill="#20201E"/>
+                                 </svg>
+                              </button>
+                              <input type="file" id="profile-photo-additional-2" title="">
+                              <p>Додати фото</p>
+                           </div>
+                           <div id="create-add-wrap-additional-photo-3" class="create-add__wrapPhoto "><!-- photo-selected -->
+                              <!--<img src="images/preview-slide-img-2.jpg" alt="">-->
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#838382"/>
+                                    <g clip-path="url(.clip0_40000030_199562)">
+                                    <path d="M22 17H17V22C17 22.55 16.55 23 16 23C15.45 23 15 22.55 15 22V17H10C9.45 17 9 16.55 9 16C9 15.45 9.45 15 10 15H15V10C15 9.45 15.45 9 16 9C16.55 9 17 9.45 17 10V15H22C22.55 15 23 15.45 23 16C23 16.55 22.55 17 22 17Z" fill="#838382"/>
+                                 </g>
+                                 <defs>
+                                    <clipPath class="clip0_40000030_199562">
+                                       <rect width="24" height="24" fill="white" transform="translate(4 4)"/>
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                              <button id="remove-photo-3" type="button" class="remove-photo">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.44625 0.15125C6.25125 -0.0437499 5.93625 -0.0437499 5.74125 0.15125L3.29625 2.59125L0.85125 0.14625C0.65625 -0.04875 0.34125 -0.04875 0.14625 0.14625C-0.04875 0.34125 -0.04875 0.65625 0.14625 0.85125L2.59125 3.29625L0.14625 5.74125C-0.04875 5.93625 -0.04875 6.25125 0.14625 6.44625C0.34125 6.64125 0.65625 6.64125 0.85125 6.44625L3.29625 4.00125L5.74125 6.44625C5.93625 6.64125 6.25125 6.64125 6.44625 6.44625C6.64125 6.25125 6.64125 5.93625 6.44625 5.74125L4.00125 3.29625L6.44625 0.85125C6.63625 0.66125 6.63625 0.34125 6.44625 0.15125V0.15125Z" fill="#20201E"/>
+                                 </svg>
+                              </button>
+                              <input type="file" id="profile-photo-additional-3" title="">
+                              <p>Додати фото</p>
+                           </div>
+                           <div id="create-add-wrap-additional-photo-4" class="create-add__wrapPhoto "><!-- photo-selected -->
+                              <!--<img src="images/preview-slide-img-2.jpg" alt="">-->
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#838382"/>
+                                    <g clip-path="url(.clip0_40000030_199562)">
+                                    <path d="M22 17H17V22C17 22.55 16.55 23 16 23C15.45 23 15 22.55 15 22V17H10C9.45 17 9 16.55 9 16C9 15.45 9.45 15 10 15H15V10C15 9.45 15.45 9 16 9C16.55 9 17 9.45 17 10V15H22C22.55 15 23 15.45 23 16C23 16.55 22.55 17 22 17Z" fill="#838382"/>
+                                 </g>
+                                 <defs>
+                                    <clipPath class="clip0_40000030_199562">
+                                       <rect width="24" height="24" fill="white" transform="translate(4 4)"/>
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                              <button id="remove-photo-4" type="button" class="remove-photo">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.44625 0.15125C6.25125 -0.0437499 5.93625 -0.0437499 5.74125 0.15125L3.29625 2.59125L0.85125 0.14625C0.65625 -0.04875 0.34125 -0.04875 0.14625 0.14625C-0.04875 0.34125 -0.04875 0.65625 0.14625 0.85125L2.59125 3.29625L0.14625 5.74125C-0.04875 5.93625 -0.04875 6.25125 0.14625 6.44625C0.34125 6.64125 0.65625 6.64125 0.85125 6.44625L3.29625 4.00125L5.74125 6.44625C5.93625 6.64125 6.25125 6.64125 6.44625 6.44625C6.64125 6.25125 6.64125 5.93625 6.44625 5.74125L4.00125 3.29625L6.44625 0.85125C6.63625 0.66125 6.63625 0.34125 6.44625 0.15125V0.15125Z" fill="#20201E"/>
+                                 </svg>
+                              </button>
+                              <input type="file" id="profile-photo-additional-4" title="">
+                              <p>Додати фото</p>
+                           </div>
+                           <div id="create-add-wrap-additional-photo-5" class="create-add__wrapPhoto "><!-- photo-selected -->
+                              <!--<img src="images/preview-slide-img-2.jpg" alt="">-->
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#838382"/>
+                                    <g clip-path="url(.clip0_40000030_199562)">
+                                    <path d="M22 17H17V22C17 22.55 16.55 23 16 23C15.45 23 15 22.55 15 22V17H10C9.45 17 9 16.55 9 16C9 15.45 9.45 15 10 15H15V10C15 9.45 15.45 9 16 9C16.55 9 17 9.45 17 10V15H22C22.55 15 23 15.45 23 16C23 16.55 22.55 17 22 17Z" fill="#838382"/>
+                                 </g>
+                                 <defs>
+                                    <clipPath class="clip0_40000030_199562">
+                                       <rect width="24" height="24" fill="white" transform="translate(4 4)"/>
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                              <button id="remove-photo-5" type="button" class="remove-photo">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.44625 0.15125C6.25125 -0.0437499 5.93625 -0.0437499 5.74125 0.15125L3.29625 2.59125L0.85125 0.14625C0.65625 -0.04875 0.34125 -0.04875 0.14625 0.14625C-0.04875 0.34125 -0.04875 0.65625 0.14625 0.85125L2.59125 3.29625L0.14625 5.74125C-0.04875 5.93625 -0.04875 6.25125 0.14625 6.44625C0.34125 6.64125 0.65625 6.64125 0.85125 6.44625L3.29625 4.00125L5.74125 6.44625C5.93625 6.64125 6.25125 6.64125 6.44625 6.44625C6.64125 6.25125 6.64125 5.93625 6.44625 5.74125L4.00125 3.29625L6.44625 0.85125C6.63625 0.66125 6.63625 0.34125 6.44625 0.15125V0.15125Z" fill="#20201E"/>
+                                 </svg>
+                              </button>
+                              <input type="file" id="profile-photo-additional-5" title="">
+                              <p>Додати фото</p>
+                           </div>
+                           <!--
+                           <div id="create-add-wrap-additional-photo-6" class="create-add__wrapPhoto photo-selected">
+                              <img src="images/preview-slide-img-2.jpg" alt="">
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#838382"/>
+                                    <g clip-path="url(.clip0_40000030_199562)">
+                                    <path d="M22 17H17V22C17 22.55 16.55 23 16 23C15.45 23 15 22.55 15 22V17H10C9.45 17 9 16.55 9 16C9 15.45 9.45 15 10 15H15V10C15 9.45 15.45 9 16 9C16.55 9 17 9.45 17 10V15H22C22.55 15 23 15.45 23 16C23 16.55 22.55 17 22 17Z" fill="#838382"/>
+                                 </g>
+                                 <defs>
+                                    <clipPath class="clip0_40000030_199562">
+                                       <rect width="24" height="24" fill="white" transform="translate(4 4)"/>
+                                    </clipPath>
+                                 </defs>
+                              </svg>
+                              <button id="remove-photo-6" type="button" class="remove-photo">
+                                 <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.44625 0.15125C6.25125 -0.0437499 5.93625 -0.0437499 5.74125 0.15125L3.29625 2.59125L0.85125 0.14625C0.65625 -0.04875 0.34125 -0.04875 0.14625 0.14625C-0.04875 0.34125 -0.04875 0.65625 0.14625 0.85125L2.59125 3.29625L0.14625 5.74125C-0.04875 5.93625 -0.04875 6.25125 0.14625 6.44625C0.34125 6.64125 0.65625 6.64125 0.85125 6.44625L3.29625 4.00125L5.74125 6.44625C5.93625 6.64125 6.25125 6.64125 6.44625 6.44625C6.64125 6.25125 6.64125 5.93625 6.44625 5.74125L4.00125 3.29625L6.44625 0.85125C6.63625 0.66125 6.63625 0.34125 6.44625 0.15125V0.15125Z" fill="#20201E"/>
+                                 </svg>
+                              </button>
+                              <input type="file" id="profile-photo-additional-6" title="">
+                              <p>Додати фото</p>
+                           </div>
+                           -->
+                        </div>
+                        <div class="create-add__form-buttons">
+                           <a href="#" class="create-add__form-button preview disabled" target="_blank">Попередній перегляд</a>
+                           <button type="submit" class="create-add__form-button submit" disabled>Опублікувати</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+
+				<!-- Create Add -->
+
+         </div>
+      </main>
+
+      <div id="ten-out-of-ten-published" class="popup popup-ten-out-of-ten-referrals">
+         <div class="popup__body">
+            <div class="popup__content">
+               <a href="" class="popup__close close-popup">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M17.19 0.403334C16.67 -0.116666 15.83 -0.116666 15.31 0.403334L8.79 6.91L2.27 0.39C1.75 -0.13 0.91 -0.13 0.39 0.39C-0.13 0.91 -0.13 1.75 0.39 2.27L6.91 8.79L0.39 15.31C-0.13 15.83 -0.13 16.67 0.39 17.19C0.91 17.71 1.75 17.71 2.27 17.19L8.79 10.67L15.31 17.19C15.83 17.71 16.67 17.71 17.19 17.19C17.71 16.67 17.71 15.83 17.19 15.31L10.67 8.79L17.19 2.27C17.6967 1.76333 17.6967 0.91 17.19 0.403334V0.403334Z" fill="#838382"/>
+                  </svg>
+               </a>
+               <div class="popup-inviting-text__blockIcon">
+                  <img src="images/popup-ten-out-of-ten-published-illustration-new.png" alt="">
+               </div>
+               <p>Ліміт розміщень на цей місяць вичерпано, але ви можете придбати разове розміщення додатково.</p>
+               <a href="#" class="popup-ten-out-of-ten-referrals__button">Разове розміщення</a>
+            </div>
+         </div>
+      </div>
+
+		<footer class="footer">
+    <div class="n_container">
+        <div class="footer__columns">
+            <div class="footer__column footer-first-column">
+                <div class="footer__blockLogo">
+                    <img src="images/svg/footer-logo-new.svg" alt="MarketApp">
+                </div>
+                <div class="footer__appButtons">
+                    <a href="#">
+                        <img src="images/svg/footer-app-google-new.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/svg/footer-app-store-new.svg" alt="">
+                    </a>
+                </div>
+                <p class="footer-copyright">2026 MarketApp. Всі права захищені.</p>
+            </div>
+            <div data-da="footer-first-column, 1, 767" class="footer__column">
+                <div class="footer__columnBlock">
+                    <h3>Про нас</h3>
+                    <ul>
+                        <li><a href="#">Про MarketApp</a></li>
+                        <li><a href="#">Мобільний застосунок</a></li>
+                        <li><a href="#">Реклама</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock">
+                    <h3>Навігація</h3>
+                    <ul>
+                        <li><a href="#">Категорії</a></li>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Пошук</a></li>
+                        <li><a href="#">Повідомлення</a></li>
+                        <li><a href="#">Улюблене</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Новини</a></li>
+                    </ul>
+                </div>
+                <div class="footer__columnBlock last">
+                    <h3>Допомога</h3>
+                    <ul>
+                        <li><a href="#">Public offer</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	</div>
+	
+   <script src="js/script.min.js?_v=20260919220406"></script>
+
+   <script src="files/js/jquery-3.6.1.min.js?_v=20260919220406"></script>
+
+   <script src="files/select2/js/select2.full.min.js?_v=20260919220406"></script>
+   <script src="files/select2/js/init.js?_v=20260919220406"></script>
+
+   <script src="files/js/create-add.js?_v=20260919220406"></script>
+
+   <script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+			// Відстеження кнопки Ціна активна чи ні
+			setInterval(() => {
+				document.querySelectorAll('[data-toggle-target]').forEach(input => {
+					const target = document.querySelector(`[data-toggle-content="${input.dataset.toggleTarget}"]`);
+					if (!target) {
+						return;
+					}
+					target.classList.toggle('hidden', !input.checked);
+				});
+			}, 30);
+
+		});
+	</script>
+	
+</body>
+</html>
