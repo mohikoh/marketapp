@@ -611,3 +611,32 @@ let swiper2 = new Swiper(".preview-slider", {
    watchOverflow: true,
 });
 /* <- preview-slider */
+
+/* Slider Gallery for page Chat -> */
+const chatBigSliderEl = document.querySelector('#big-slider');
+const chatSliderGalleryEl = document.querySelector('#slider-gallery');
+if (chatBigSliderEl && chatSliderGalleryEl) {
+
+   const chatSliderGallery = new Swiper(chatSliderGalleryEl, {
+      loop: true,
+      spaceBetween: 2,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+   });
+
+   const chatBigSlider = new Swiper(chatBigSliderEl, {
+      loop: true,
+      spaceBetween: 0,
+      effect: 'fade',
+      navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+         swiper: chatSliderGallery,
+      },
+   });
+
+}
+/* <- Slider Gallery for page Chat */
