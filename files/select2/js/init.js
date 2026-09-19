@@ -25,7 +25,7 @@ $(document).ready(function () { // Make sure the DOM is fully loaded before init
    });
 
    $('#sidebar-filters-categories').select2({
-      placeholder: "Категорія",
+      placeholder: "Категорія*",
       theme: 'sidebar-filters',
       allowClear: true,
       language: {
@@ -73,7 +73,7 @@ $(document).ready(function () { // Make sure the DOM is fully loaded before init
       }, 0);
    });
    $('#sidebar-filters-country').select2({
-      placeholder: "Страна",
+      placeholder: "Країна*",
       theme: 'sidebar-filters',
       allowClear: true,
       language: {
@@ -121,7 +121,7 @@ $(document).ready(function () { // Make sure the DOM is fully loaded before init
       }, 0);
    });
    $('#sidebar-filters-city').select2({
-      placeholder: "Місто",
+      placeholder: "Місто*",
       theme: 'sidebar-filters',
       allowClear: true,
       language: {
